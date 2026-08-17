@@ -13,7 +13,7 @@ const scrollToVideo = (e) => {
   if (target) {
     // Check if Lenis is available globally or use native smooth scroll
     if (window.lenis) {
-      window.lenis.scrollTo(target, { offset: -80 })
+      window.lenis.scrollTo(target, { offset: 70 })
     } else {
       target.scrollIntoView({ behavior: 'smooth' })
     }
