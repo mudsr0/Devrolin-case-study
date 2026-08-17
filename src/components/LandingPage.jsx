@@ -125,7 +125,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="landing" ref={rootRef}>
+    <div className="landing" ref={rootRef} style={{ backgroundColor: '#000000' }}>
       {/* ── 1. Hero ── */}
       <section className="landing-hero">
         <div className="landing-inner">

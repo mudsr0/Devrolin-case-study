@@ -7,6 +7,19 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const scrollToVideo = (e) => {
+  e.preventDefault()
+  const target = document.getElementById('video-demo')
+  if (target) {
+    // Check if Lenis is available globally or use native smooth scroll
+    if (window.lenis) {
+      window.lenis.scrollTo(target, { offset: -80 })
+    } else {
+      target.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+}
+
 function RichText({ html, className }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: html }} />
 }
@@ -130,12 +143,12 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
               <p className="builder-note">
                 <RichText html={builder.note} />
               </p>
-              <a href="#video-demo" className="watch-demo-btn">
+              <button onClick={scrollToVideo} className="watch-demo-btn">
                 Watch the live demo
                 <span className="arrow-wrap">
                   <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </section>

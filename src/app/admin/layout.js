@@ -11,7 +11,7 @@ export default async function AdminLayout({ children }) {
   const session = await getAdminSession()
 
   return (
-    <div className="min-h-screen bg-admin-bg1 text-admin-text">
+    <div className="min-h-screen bg-admin-bg1 text-admin-text" style={{ backgroundColor: '#000000' }}>
       <header className="h-14 border-b border-admin-border bg-admin-bg1">
         <div className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link

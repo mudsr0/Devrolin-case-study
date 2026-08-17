@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import CopyLinkButton from '@/components/admin/CopyLinkButton'
@@ -52,12 +52,18 @@ function RowActions({ caseStudy, deletingId, onDelete, linkPath }) {
 
 export default function CaseStudiesTable({ caseStudies }) {
   const router = useRouter()
-  const [query, setQuery] = useState('')
+  const [searchInput, setSearchInput] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
   const [category, setCategory] = useState('All')
   const [linkMode, setLinkMode] = useState('upwork')
   const [deletingId, setDeletingId] = useState(null)
   const [error, setError] = useState('')
   const linkPath = linkMode === 'upwork' ? 'upwork/case-study' : 'case-study'
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedQuery(searchInput), 300)
+    return () => clearTimeout(timer)
+  }, [searchInput])
 
   const categories = useMemo(() => {
     const set = new Set()
@@ -70,17 +76,32 @@ export default function CaseStudiesTable({ caseStudies }) {
   }, [caseStudies])
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase()
+    const q = debouncedQuery.trim().toLowerCase()
+    const keywords = q ? q.split(/\s+/).filter(Boolean) : []
+
     return caseStudies.filter((cs) => {
       if (category !== 'All' && cs.category !== category) {
         return false
       }
-      if (!q) return true
-      const client = (cs.clientName ?? '').toLowerCase()
-      const title = (cs.heroTitle ?? '').toLowerCase()
-      return client.includes(q) || title.includes(q)
+      if (keywords.length === 0) return true
+
+      const searchable = [
+        cs.clientName,
+        cs.category,
+        cs.heroTitle,
+        cs.heroBody,
+        cs.heroTag,
+        ...(cs.heroPills ?? []),
+        ...(cs.pains ?? []),
+        ...(cs.builtItems ?? []).flatMap((item) => [item?.title, item?.desc]),
+      ]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase()
+
+      return keywords.every((kw) => searchable.includes(kw))
     })
-  }, [caseStudies, query, category])
+  }, [caseStudies, debouncedQuery, category])
 
   async function handleDelete(caseStudy) {
     const confirmed = window.confirm(
@@ -158,9 +179,9 @@ export default function CaseStudiesTable({ caseStudies }) {
           </span>
           <input
             type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by client or title…"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+            placeholder="Search by client, title, category, keyword…"
             className="w-full rounded-lg border border-admin-border bg-admin-bg2 py-2.5 pl-10 pr-3.5 text-sm text-admin-text placeholder-admin-muted outline-none transition-colors focus:border-admin-accent focus:ring-2 focus:ring-admin-accent/25"
           />
         </label>
