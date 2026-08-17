@@ -16,10 +16,11 @@ if (typeof window !== 'undefined' && !FORMSPREE_ENDPOINT) {
 }
 
 const STATS = [
-  { value: '40+', label: 'Projects Shipped' },
+  { value: '500+', label: 'Projects Shipped' },
   { value: '12+', label: 'Countries Served' },
-  { value: '3', label: 'Companies Built' },
-  { value: '5yr', label: 'Experience' },
+  // { value: '3', label: 'Companies Built' },
+  { value: '12yr+', label: 'Experience' },
+  { value: '2500+', label: 'Success Stories' },
 ]
 
 const SERVICES = [
