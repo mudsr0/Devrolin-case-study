@@ -33,5 +33,5 @@ export default async function CaseStudyPage({ params }) {
     _id: String(data._id),
   }
 
-  return <CaseStudyDetail data={serialized} audience="cold" />
+  return <CaseStudyDetail data={serialized} audience="upwork" />
 }

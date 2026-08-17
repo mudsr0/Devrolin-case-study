@@ -28,7 +28,7 @@ function CategoryBadge({ category }) {
   )
 }
 
-function RowActions({ caseStudy, deletingId, onDelete }) {
+function RowActions({ caseStudy, deletingId, onDelete, linkPath }) {
   return (
     <div className={rowActionsClass}>
       <Link
@@ -37,7 +37,7 @@ function RowActions({ caseStudy, deletingId, onDelete }) {
       >
         Edit
       </Link>
-      <CopyLinkButton slug={caseStudy.slug} />
+      <CopyLinkButton slug={caseStudy.slug} path={linkPath} />
       <button
         type="button"
         disabled={deletingId === caseStudy._id}
@@ -54,8 +54,10 @@ export default function CaseStudiesTable({ caseStudies }) {
   const router = useRouter()
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState('All')
+  const [linkMode, setLinkMode] = useState('upwork')
   const [deletingId, setDeletingId] = useState(null)
   const [error, setError] = useState('')
+  const linkPath = linkMode === 'upwork' ? 'upwork/case-study' : 'case-study'
 
   const categories = useMemo(() => {
     const set = new Set()
@@ -112,8 +114,33 @@ export default function CaseStudiesTable({ caseStudies }) {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-        <label className="relative block w-full lg:max-w-sm">
+      <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+        <div className="inline-flex w-full self-start rounded-lg border border-admin-border bg-admin-bg2 p-1 md:w-auto">
+          <button
+            type="button"
+            onClick={() => setLinkMode('upwork')}
+            className={
+              linkMode === 'upwork'
+                ? 'flex-1 rounded-md bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors md:flex-none'
+                : 'flex-1 rounded-md px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:text-admin-text md:flex-none'
+            }
+          >
+            Upwork Links
+          </button>
+          <button
+            type="button"
+            onClick={() => setLinkMode('outreach')}
+            className={
+              linkMode === 'outreach'
+                ? 'flex-1 rounded-md bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors md:flex-none'
+                : 'flex-1 rounded-md px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:text-admin-text md:flex-none'
+            }
+          >
+            Cold Outreach Links
+          </button>
+        </div>
+
+        <label className="relative block w-full md:max-w-sm">
           <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-admin-muted">
             <svg
               className="h-4 w-4"
@@ -137,26 +164,34 @@ export default function CaseStudiesTable({ caseStudies }) {
             className="w-full rounded-lg border border-admin-border bg-admin-bg2 py-2.5 pl-10 pr-3.5 text-sm text-admin-text placeholder-admin-muted outline-none transition-colors focus:border-admin-accent focus:ring-2 focus:ring-admin-accent/25"
           />
         </label>
+      </div>
 
-        <div className="flex flex-wrap items-center gap-2">
-          {categories.map((cat) => {
-            const active = cat === category
-            return (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setCategory(cat)}
-                className={
-                  active
-                    ? 'rounded-full bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors'
-                    : 'rounded-full border border-admin-border bg-admin-bg2 px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:border-admin-accent/60 hover:text-admin-text'
-                }
-              >
-                {cat}
-              </button>
-            )
-          })}
-        </div>
+      <p className="mt-3 text-xs text-admin-muted">
+        Copy button will generate{' '}
+        <code className="rounded bg-admin-bg2 px-1.5 py-0.5 text-admin-accent">
+          /{linkPath}/
+        </code>
+        links
+      </p>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        {categories.map((cat) => {
+          const active = cat === category
+          return (
+            <button
+              key={cat}
+              type="button"
+              onClick={() => setCategory(cat)}
+              className={
+                active
+                  ? 'rounded-full bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors'
+                  : 'rounded-full border border-admin-border bg-admin-bg2 px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:border-admin-accent/60 hover:text-admin-text'
+              }
+            >
+              {cat}
+            </button>
+          )
+        })}
       </div>
 
       {error && (
@@ -210,6 +245,7 @@ export default function CaseStudiesTable({ caseStudies }) {
                           caseStudy={cs}
                           deletingId={deletingId}
                           onDelete={handleDelete}
+                          linkPath={linkPath}
                         />
                       </div>
                     </td>
@@ -243,6 +279,7 @@ export default function CaseStudiesTable({ caseStudies }) {
                     caseStudy={cs}
                     deletingId={deletingId}
                     onDelete={handleDelete}
+                    linkPath={linkPath}
                   />
                 </div>
               </article>
