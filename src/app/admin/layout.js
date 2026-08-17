@@ -3,7 +3,8 @@ import { getAdminSession } from '@/lib/auth'
 import LogoutButton from '@/components/admin/LogoutButton'
 
 export const metadata = {
-  title: 'Admin · DevRolin',
+  title: 'Admin Dashboard',
+  description: 'DevRolin Case Study CMS',
 }
 
 export default async function AdminLayout({ children }) {

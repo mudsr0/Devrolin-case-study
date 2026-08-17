@@ -83,7 +83,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
 
   if (!data) {
     return (
-      <div className="case-study upwork-theme wrap" style={{ paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}>
+      <div className={`case-study ${audience === 'cold' ? 'cold-theme' : 'upwork-theme'} wrap`} style={{ paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}>
         <h1>Case study not found</h1>
         <p style={{ margin: '12px 0 24px', color: '#A8A8A8' }}>We couldn&apos;t find the case study you&apos;re looking for.</p>
         <Link href="/" className="watch-demo-btn">Back to home</Link>
@@ -116,7 +116,13 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
         {/* ── 1. Builder intro ── */}
         <section className="builder-section">
           <div className="builder-card" data-fade>
-            <div className="builder-avatar">{builder.initials}</div>
+            <div className="builder-avatar">
+              <img
+                src="/images/mudassir.png"
+                alt={builder.name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
+              />
+            </div>
             <div className="builder-meta">
               <div className="builder-from">Sent personally by</div>
               <div className="builder-name">{builder.name}</div>
@@ -144,8 +150,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <p className="hero-body">{hero.body}</p>
           {Array.isArray(hero.pills) && hero.pills.length > 0 && (
             <div className="result-pills">
-              {hero.pills.map((pill) => (
-                <span key={pill} className="pill"><span className="pill-dot"></span>{pill}</span>
+              {hero.pills.map((pill, index) => (
+                <span key={`pill-${index}`} className="pill"><span className="pill-dot"></span>{pill}</span>
               ))}
             </div>
           )}
@@ -155,22 +161,11 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
         <section className="problem-section" data-fade>
           <SectionHeading eyebrow={problem.eyebrow} heading={problem.heading} sub={problem.sub} />
           {Array.isArray(problem.pains) && problem.pains.length > 0 && (
-            <div className="pain-list">
-              <svg className="pain-connections" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <line x1="20" y1="15" x2="75" y2="25" stroke="rgba(229, 57, 42, 0.4)" strokeWidth="0.2" strokeDasharray="1, 1" />
-                <line x1="80" y1="30" x2="25" y2="80" stroke="rgba(229, 57, 42, 0.4)" strokeWidth="0.2" strokeDasharray="1, 1" />
-                <line x1="15" y1="85" x2="70" y2="95" stroke="rgba(229, 57, 42, 0.4)" strokeWidth="0.2" strokeDasharray="1, 1" />
-              </svg>
+            <div className="pain-list-minimal">
               {problem.pains.map((pain, index) => (
-                <div key={pain} className="pain-item">
-                  <div className="pain-x" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M15 7h3a5 5 0 0 1 0 10h-3"></path>
-                      <path d="M9 17H6a5 5 0 0 1 0-10h3"></path>
-                    </svg>
-                  </div>
-                  <span className="pain-text">{pain}</span>
-                  <span className="pain-status">{index % 2 === 0 ? 'SYSTEM ISOLATED' : 'OFFLINE'}</span>
+                <div key={`pain-${index}`} className="pain-item-minimal">
+                  <span className="pain-dot"></span>
+                  <span className="pain-text-minimal">{pain}</span>
                 </div>
               ))}
             </div>
@@ -219,8 +214,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <SectionHeading eyebrow={built.eyebrow} heading={built.heading} sub={built.sub} />
           {Array.isArray(built.items) && built.items.length > 0 && (
             <div className="built-grid">
-              {built.items.map((item) => (
-                <div key={item.num} className="built-card">
+              {built.items.map((item, index) => (
+                <div key={`built-${index}`} className="built-card">
                   <div className="built-num">{item.num}</div>
                   <div className="built-title">{item.title}</div>
                   <div className="built-desc">{item.desc}</div>
@@ -235,8 +230,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <SectionHeading eyebrow={outcome.eyebrow} heading={outcome.heading} sub={outcome.sub} style={{ marginBottom: '20px' }} />
           {Array.isArray(outcome.items) && outcome.items.length > 0 && (
             <div className="outcome-grid">
-              {outcome.items.map((item) => (
-                <div key={item.num} className="outcome-card">
+              {outcome.items.map((item, index) => (
+                <div key={`outcome-${index}`} className="outcome-card">
                   <div className="outcome-num">{item.num}</div>
                   <div className="outcome-label">{item.label}</div>
                 </div>
@@ -272,8 +267,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <SectionHeading eyebrow={process.eyebrow} heading={process.heading} sub={process.sub} style={{ marginBottom: '28px' }} />
           {Array.isArray(process.steps) && process.steps.length > 0 && (
             <div className="process-steps">
-              {process.steps.map((step) => (
-                <div key={step.num} className="process-step">
+              {process.steps.map((step, index) => (
+                <div key={`step-${index}`} className="process-step">
                   <div className="pstep-num">{step.num}</div>
                   <div className="pstep-content">
                     <div className="pstep-title">{step.title}</div>

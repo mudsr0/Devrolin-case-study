@@ -5,6 +5,22 @@ import CaseStudyDetail from '@/components/CaseStudyDetail'
 
 export const dynamic = 'force-dynamic'
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+
+  await dbConnect()
+  const caseStudy = await CaseStudy.findOne({ slug }).lean()
+
+  if (!caseStudy) {
+    return { title: 'Case Study Not Found' }
+  }
+
+  return {
+    title: caseStudy.clientName,
+    description: caseStudy.hero?.body || `Case study for ${caseStudy.clientName}`,
+  }
+}
+
 export default async function CaseStudyPage({ params }) {
   const { slug } = await params
 
@@ -14,7 +30,7 @@ export default async function CaseStudyPage({ params }) {
   if (!data) {
     return (
       <div
-        className="case-study upwork-theme wrap"
+        className="case-study cold-theme wrap"
         style={{ paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}
       >
         <h1>Case study not found</h1>
