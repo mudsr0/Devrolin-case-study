@@ -301,7 +301,7 @@ export default function AdminForm({ mode = 'create', caseStudyId, initialData })
         <div className="grid gap-5 sm:grid-cols-2">
           <Field
             label="Slug"
-            hint="Used in the public URL: /case-study/your-slug. Auto-generated from the client name if left blank."
+            hint="Used in the public URLs: /upwork/case-study/your-slug and /case-study/your-slug. Auto-generated from the client name if left blank."
           >
             <input
               value={form.slug}

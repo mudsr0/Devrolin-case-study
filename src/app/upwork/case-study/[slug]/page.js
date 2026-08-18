@@ -30,7 +30,7 @@ export default async function CaseStudyPage({ params }) {
   if (!data) {
     return (
       <div
-        className="case-study cold-theme wrap"
+        className="case-study upwork-theme wrap"
         style={{ paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}
       >
         <h1>Case study not found</h1>
@@ -49,5 +49,5 @@ export default async function CaseStudyPage({ params }) {
     _id: String(data._id),
   }
 
-  return <CaseStudyDetail data={serialized} audience="cold" />
+  return <CaseStudyDetail data={serialized} audience="upwork" />
 }

@@ -14,6 +14,11 @@ function serialize(caseStudy) {
     category: caseStudy.category ?? '',
     clientName: caseStudy.clientName ?? '',
     heroTitle: caseStudy.hero?.title ?? '',
+    heroBody: caseStudy.hero?.body ?? '',
+    heroTag: caseStudy.hero?.tag ?? '',
+    heroPills: Array.isArray(caseStudy.hero?.pills) ? caseStudy.hero.pills : [],
+    pains: Array.isArray(caseStudy.problem?.pains) ? caseStudy.problem.pains : [],
+    builtItems: Array.isArray(caseStudy.built?.items) ? caseStudy.built.items : [],
     createdAt: caseStudy.createdAt
       ? new Date(caseStudy.createdAt).toISOString()
       : null,
