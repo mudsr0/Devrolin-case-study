@@ -16,45 +16,78 @@ if (typeof window !== 'undefined' && !FORMSPREE_ENDPOINT) {
 }
 
 const STATS = [
-  { value: '500+', label: 'Projects Shipped' },
-  { value: '12+', label: 'Countries Served' },
-  // { value: '3', label: 'Companies Built' },
-  { value: '12yr+', label: 'Experience' },
-  { value: '2500+', label: 'Success Stories' },
+  { value: '18+ YRS', label: 'Building Systems' },
+  { value: 'FORBES', label: 'Featured Client Experience' },
+  { value: '1M+', label: 'Audience Systems' },
+  { value: 'GLOBAL', label: 'Systems Built Across Markets' },
 ]
 
 const SERVICES = [
-  { icon: '✦', title: 'Agentic AI', desc: 'Multi-agent pipelines, autonomous systems' },
-  { icon: '⚡', title: 'Automations', desc: 'Code-first webhooks, API chains, GHL/CRM integrations' },
-  { icon: '◈', title: 'Full-stack SaaS', desc: 'Next.js, MERN, custom CRMs, dashboards' },
-  { icon: '✺', title: '3D & Premium Web', desc: 'Three.js, React Three Fiber, GSAP' },
-  { icon: '◉', title: 'Mobile Apps', desc: 'Flutter cross-platform' },
-  { icon: '◬', title: 'AI / ML Systems', desc: 'TTS, BCI pipelines, OpenAI integration' },
+  {
+    icon: '⚙️',
+    title: 'AI Automation & Integration',
+    subtitle: 'Remove the work your team shouldn’t be doing.',
+    desc: ' Connect your tools, APIs, data, and workflows so repetitive processes happen automatically instead of depending on someone remembering.',
+    stack: ['n8n', 'Make', 'Zapier', 'APIs', 'Webhooks'],
+  },
+  {
+    icon: '📈',
+    title: 'CRM & Revenue Systems',
+    subtitle: 'Make your CRM move revenue, not just store contacts.',
+    desc: ' Lead routing, pipeline automation, follow-ups, lifecycle workflows, reporting, and integrations built to keep opportunities moving.',
+    stack: ['GoHighLevel', 'Zoho CRM', 'HubSpot', 'Salesforce', 'Pipedrive'],
+  },
+  {
+    icon: '🤖',
+    title: 'AI Agents',
+    subtitle: 'AI that does the work, not just talks about it.',
+    desc: 'Agents for qualification, support, research, document processing, internal operations, and multi-step business workflows.',
+    stack: ['OpenAI', 'Claude', 'LangGraph', 'CrewAI', 'RAG'],
+  },
+  {
+    icon: '🚀',
+    title: 'AI SaaS & MVPs',
+    subtitle: 'Turn an idea into a product people can actually use.',
+    desc: 'AI-powered products with the backend, authentication, dashboards, payments, integrations, and infrastructure required to move beyond a prototype.',
+    stack: ['Next.js', 'React', 'Python', 'FastAPI', 'Supabase'],
+  },
+  {
+    icon: '🐍',
+    title: 'Python & Backend Systems',
+    subtitle: 'When off-the-shelf automation isn’t enough.',
+    desc: 'Custom APIs, backend services, databases, webhooks, and business logic for systems that need more flexibility and control.',
+    stack: ['Python', 'FastAPI', 'Django', 'Node.js', 'REST APIs'],
+  },
+  {
+    icon: '🎙️',
+    title: 'Voice AI',
+    subtitle: 'AI that can listen, respond, and take action.',
+    desc: 'Voice agents built for inbound calls, lead qualification, appointment booking, support, and multilingual customer experiences.',
+    stack: ['Vapi', 'Retell', 'ElevenLabs', 'Deepgram', 'Twilio'],
+  },
 ]
 
 const REVIEWS = [
   {
-    quote:
-      'Most teams overpromise. Mudassir simply delivered. Clear updates, fast problem solving, and a level of ownership that’s hard to find.',
-    name: 'David Morgan',
-    role: 'Startup Owner',
-    initials: 'DM',
+    quote: 'They were awesome and flexible, and they knocked our job out of the park. Beyond expectations, I will definitely use this team for our next project.',
+    name: 'Mr.Julian',
+    role: 'Noble School Chicago',
+    initials: 'J',
   },
   {
-    quote:
-      'Strong technical team with real operational thinking. They fixed critical gaps and executed with professionalism from start to finish.',
-    name: 'Rachit Patel',
-    role: 'CEO GBNODES',
-    initials: 'RP',
+    quote: 'Mudassir was great to work with.Delivered clean, thorough work across all milestones, communicated proactively, and met every deadline.Would gladly hire again.',
+    name: 'Mr.Marco',
+    role: 'Founder RubberDuck',
+    initials: 'M',
   },
   {
-    quote:
-      'Delivered clean, thorough work across all milestones, communicated proactively, and met every deadline. Would gladly hire again.',
-    name: 'Mr. Marco',
-    role: 'CEO RubberDuck',
-    initials: 'MM',
+    quote: 'Mudassir, worked really well, communicated well and completed quality work.We look forward to working with him again.',
+    name: 'Mr.Dermot',
+    role: 'Founder AWF',
+    initials: 'D',
   },
 ]
+
 
 export default function LandingPage() {
   const rootRef = useRef(null)
@@ -146,14 +179,30 @@ export default function LandingPage() {
                 )}
               </div>
 
-              <div className="landing-eyebrow">CRM Automation · AI Systems Expert</div>
-              <h1 className="landing-title">Turning Complex Business Problems into Automated Systems.</h1>
+              <div className="landing-eyebrow">
+                AI AUTOMATION &amp; INTEGRATION · CRM &amp; REVENUE SYSTEMS · AI AGENTS · AI SAAS &amp; MVPs
+              </div>
+              <h1 className="landing-title">Your business shouldn&apos;t depend on manual work.</h1>
               <p className="landing-sub">
-                COO &amp; Co-founder of DevRolin. I build custom AI SaaS platforms, CRM automations, and
-                high-converting websites. 40+ systems deployed globally. No templates. No shortcuts.
+                I build AI, automation, and CRM systems that connect your tools, remove operational bottlenecks,
+                and keep critical workflows moving without constant human follow-up. <br />
               </p>
+              <p className="landing-tags">Forbes-Featured Clients ·
+                Systems Supporting 1M+ Audiences · 18+ Years Building Systems</p>
 
-              <form className="landing-form" onSubmit={handleSubmit} noValidate>
+              <form id="lp-form" className="landing-form" onSubmit={handleSubmit} noValidate>
+                <div className="landing-form-head">
+                  <h2 className="landing-form-title">Have a bottleneck?</h2>
+                  <p className="landing-form-sub">
+                    Show me what&apos;s slowing the business down. A repetitive process, disconnected CRM, AI idea,
+                    or workflow your team is still handling manually.
+                  </p>
+                  <p className="landing-form-sub-2">
+                    Send me the problem. I&apos;ll tell you where
+                    I&apos;d start.
+                  </p>
+                </div>
+
                 <div className="landing-field">
                   <label className="landing-label" htmlFor="lp-name">Name</label>
                   <input
@@ -188,7 +237,7 @@ export default function LandingPage() {
                     id="lp-message"
                     className="landing-input landing-textarea"
                     name="message"
-                    placeholder="Tell me about the problem you want automated…"
+                    placeholder="What's slowing you down? Tell me about the process, system, or idea..."
                     value={values.message}
                     onChange={handleChange}
                     required
@@ -196,8 +245,10 @@ export default function LandingPage() {
                 </div>
 
                 <button className="landing-submit" type="submit" disabled={status === 'loading'}>
-                  {status === 'loading' ? 'Sending…' : 'Send Message'}
+                  {status === 'loading' ? 'Sending…' : 'SHOW ME THE BOTTLENECK →'}
                 </button>
+
+                <p className="landing-form-foot">No sales pitch. Just a clear look at what I&apos;d solve first.</p>
 
                 {status === 'success' && (
                   <p className="landing-status landing-status--success">Thanks! I&apos;ll get back to you shortly.</p>
@@ -252,30 +303,74 @@ export default function LandingPage() {
       <section className="landing-section">
         <div className="landing-inner">
           <div className="section-head">
-            <div className="section-eyebrow">What I Do</div>
-            <h2 className="section-title">Full-stack expertise, end to end.</h2>
-            <p className="section-sub">From autonomous agents to polished interfaces — one team, no hand-offs.</p>
+            <div className="section-eyebrow">WHAT I DO</div>
+            <h2 className="section-title">From one bottleneck to the system behind the business.</h2>
+            <p className="section-sub">
+              Sometimes the answer is one automation.
+              Sometimes it&apos;s an entire platform. I build around the problem first, then choose the technology
+              required to solve it properly.
+            </p>
           </div>
 
-          <div className="services-grid" data-fade>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-fade>
             {SERVICES.map((service) => (
-              <div className="service-card" key={service.title}>
-                <div className="service-icon" aria-hidden="true">{service.icon}</div>
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-desc">{service.desc}</p>
+              <div
+                className="bg-[#0e0e0e] border border-[#1F1F1F] rounded-xl p-6 transition-all duration-300 hover:border-[#ff7425] hover:shadow-[0_0_20px_rgba(255,116,37,0.15)]"
+                key={service.title}
+              >
+                <div className="text-3xl text-[#ff7425] mb-4" aria-hidden="true">{service.icon}</div>
+                <h3 className="font-bold text-white text-lg">{service.title}</h3>
+                <p className="font-normal text-[#ff7425] text-sm">{service.subtitle}</p>
+                <p className="mt-2 text-sm text-[#9CA3AF] leading-relaxed">{service.desc}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {service.stack.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-[#1F1F1F] text-[#9CA3AF] text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 4. Reviews ── */}
+      {/* ── 4. Why Clients Hire Me ── */}
+      <section className="landing-section" data-fade>
+        <div className="landing-inner">
+          <div className="section-head">
+            <div className="section-eyebrow">Built around the business</div>
+            <h2 className="section-title">You shouldn&apos;t have to manage your developer. </h2>
+          </div>
+          <div className="landing-about">
+            <p className="section-sub">
+              I don&apos;t start by asking which tool you want. I
+              start by understanding <strong className="text-white">where time, revenue, or opportunities are being lost.</strong> Then I work backward from
+              the outcome and build the simplest system that solves the problem properly.
+            </p>
+            <p className="section-sub">
+              <strong className="text-white">Clear thinking. Clear communication. Real ownership. </strong>
+              No forcing every problem into the same platform.
+              No unnecessary technical complexity. No calling something finished because it worked once.
+            </p>
+            <p className="section-sub landing-about-highlight">
+              <strong>Understand it. Build it. Break it. Test it. Ship it.</strong> That&apos;s how I build systems
+              businesses can actually depend on.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 5. Reviews ── */}
       <section className="landing-section landing-section--reviews">
         <div className="landing-inner">
           <div className="section-head">
             <div className="section-eyebrow">Client Reviews</div>
-            <h2 className="section-title">What clients say.</h2>
-            <p className="section-sub">Real feedback from teams I’ve built with across three continents.</p>
+            <h2 className="section-title">The best proof is what happens after delivery.</h2>
+            <p className="section-sub"> Real feedback from clients  I&apos;ve built with.</p>
           </div>
 
           <div className="reviews-grid" data-fade>
@@ -296,12 +391,33 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── 6. Final CTA ── */}
+      <section className="landing-section" data-fade>
+        <div className="landing-inner">
+          <div className="landing-cta">
+            <div className="section-eyebrow">HAVE SOMETHING THAT SHOULD WORK BETTER?</div>
+            <h2 className="section-title">Show me the bottleneck.</h2>
+            <p className="section-sub">
+              You don&apos;t need to know whether the answer is AI, automation, CRM, Python,
+              or a custom platform.  <strong className="text-[#ff7425]"> Just tell me what&apos;s not working the way it should. </strong>  I&apos;ll look at the
+              problem and tell you where I&apos;d start.
+            </p>
+            <a className="landing-submit landing-submit--link" href="#lp-form">
+              DISCUSS YOUR SYSTEM →
+            </a>
+            <p className="landing-cta-note">Available for selected projects and long-term collaborations.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── Footer ── */}
       <footer className="landing-footer">
-        <p>
-          © {new Date().getFullYear()} <span className="landing-footer-brand">Mudassir H.</span> — DevRolin.
-          All rights reserved.
+        <div className="landing-footer-brand">Mudassir.</div>
+        <p className="landing-footer-tagline">
+          AI Automation &amp; Integration · CRM &amp; Revenue Systems · AI Agents · AI SaaS &amp; MVPs. Building
+          systems businesses can actually depend on.
         </p>
+        <p className="landing-footer-copyright">© 2026 Mudassir H.</p>
       </footer>
     </div>
   )
