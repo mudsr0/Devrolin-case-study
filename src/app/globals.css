@@ -84,7 +84,7 @@ body {
 }
 
 .case-study.upwork-theme .builder-avatar {
-    border-color: #000000;
+    border-color: var(--lp-accent-line);
 }
 
 /* ── Cold Outreach theme (orange) ── */
