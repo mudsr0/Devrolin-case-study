@@ -131,7 +131,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <div className="builder-card" data-fade>
             <div className="builder-avatar">
               <img
-                src="/images/mudassir.png"
+                src={audience === 'upwork' ? '/images/mudassir-green.jpeg' : '/images/mudassir.png'}
                 alt={builder.name}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
               />
