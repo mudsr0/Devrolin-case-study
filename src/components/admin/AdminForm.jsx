@@ -805,7 +805,7 @@ export default function AdminForm({ mode = 'create', caseStudyId, initialData })
               placeholder="https://www.upwork.com/…"
             />
           </Field>
-          <Field label="Email">
+          {/* <Field label="Email">
             <input
               type="email"
               value={form.cta.email}
@@ -813,7 +813,7 @@ export default function AdminForm({ mode = 'create', caseStudyId, initialData })
               className={inputClass}
               placeholder="hello@example.com"
             />
-          </Field>
+          </Field> */}
         </div>
       </Section>
 

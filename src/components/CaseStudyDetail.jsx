@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { siteData } from '@/data/siteData'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -310,7 +311,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                       </a>
                     )}
                     <a
-                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(cta.email)}`}
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(siteData.contactEmail)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-email"
@@ -321,9 +322,9 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                   </>
                 ) : (
                   <>
-                    {cta.email && (
+                    {siteData.contactEmail && (
                       <a
-                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${cta.email}`}
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(siteData.contactEmail)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-upwork"
@@ -364,8 +365,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                   Upwork Profile
                 </a>
               )}
-              {cta?.email && (
-                <a href={`mailto:${cta.email}`} className="cs-footer-link">
+              {siteData.contactEmail && (
+                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(siteData.contactEmail)}`} className="cs-footer-link">
                   Direct Email
                 </a>
               )}
