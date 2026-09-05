@@ -142,7 +142,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
               <div className="builder-name">{builder.name}</div>
               <div className="builder-expertise">CRM Automation & Sales Systems Expert</div>
               <p className="builder-note">
-                <RichText html={builder.note} />
+                {builder.note}
               </p>
               <button onClick={scrollToVideo} className="watch-demo-btn">
                 Watch the live demo
