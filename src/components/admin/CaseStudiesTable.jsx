@@ -55,7 +55,7 @@ export default function CaseStudiesTable({ caseStudies }) {
   const [searchInput, setSearchInput] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [category, setCategory] = useState('All')
-  const [linkMode, setLinkMode] = useState('upwork')
+  const [linkMode, setLinkMode] = useState('outreach')
   const [deletingId, setDeletingId] = useState(null)
   const [error, setError] = useState('')
   const linkPath = linkMode === 'upwork' ? 'upwork/case-study' : 'case-study'
@@ -137,6 +137,7 @@ export default function CaseStudiesTable({ caseStudies }) {
     <div>
       <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
         <div className="inline-flex w-full self-start rounded-lg border border-admin-border bg-admin-bg2 p-1 md:w-auto">
+          {/* Upwork Links option temporarily hidden
           <button
             type="button"
             onClick={() => setLinkMode('upwork')}
@@ -148,6 +149,7 @@ export default function CaseStudiesTable({ caseStudies }) {
           >
             Upwork Links
           </button>
+          */}
           <button
             type="button"
             onClick={() => setLinkMode('outreach')}
