@@ -6,6 +6,7 @@ import {
   unauthorizedResponse,
   errorResponse,
 } from '@/lib/auth'
+import { sendToGoogleSheet } from '@/lib/googleSheet'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -59,6 +60,9 @@ export async function POST(request) {
   await dbConnect()
   try {
     const created = await CaseStudy.create(body)
+
+    await sendToGoogleSheet(created.sheetData)
+
     return NextResponse.json(
       { caseStudy: serialize(created.toObject()) },
       { status: 201 }

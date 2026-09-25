@@ -32,6 +32,7 @@ const EMPTY = {
   },
   process: { eyebrow: '', heading: '', sub: '', steps: [] },
   cta: { heading: '', sub: '', upworkUrl: '', email: '' },
+  sheetData: { clientName: '', skills: '', techStack: '', description: '' },
 }
 
 function hydrate(data) {
@@ -815,6 +816,49 @@ export default function AdminForm({ mode = 'create', caseStudyId, initialData })
             />
           </Field> */}
         </div>
+      </Section>
+
+      <Section number="11" title="Google Sheet Data">
+        <p className="text-xs text-admin-muted/70">
+          Internal only — never displayed on the public page. On every save these
+          values are sent to the Google Sheet webhook configured in
+          GOOGLE_SHEET_WEBHOOK_URL.
+        </p>
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Field label="Client Name">
+            <input
+              value={form.sheetData.clientName}
+              onChange={(e) => update('sheetData', { clientName: e.target.value })}
+              className={inputClass}
+              placeholder="e.g. Acme Corp"
+            />
+          </Field>
+          <Field label="Skills">
+            <input
+              value={form.sheetData.skills}
+              onChange={(e) => update('sheetData', { skills: e.target.value })}
+              className={inputClass}
+              placeholder="e.g. CRM Automation, Lead Gen"
+            />
+          </Field>
+        </div>
+        <Field label="Tech Stack">
+          <input
+            value={form.sheetData.techStack}
+            onChange={(e) => update('sheetData', { techStack: e.target.value })}
+            className={inputClass}
+            placeholder="e.g. Next.js, MongoDB, n8n"
+          />
+        </Field>
+        <Field label="Description">
+          <textarea
+            value={form.sheetData.description}
+            onChange={(e) => update('sheetData', { description: e.target.value })}
+            className={inputClass}
+            rows={5}
+            placeholder="Internal summary sent to the Google Sheet…"
+          />
+        </Field>
       </Section>
 
       <div className="flex items-center justify-between gap-4">

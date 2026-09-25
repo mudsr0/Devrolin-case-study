@@ -7,6 +7,7 @@ import {
   unauthorizedResponse,
   errorResponse,
 } from '@/lib/auth'
+import { sheetDataChanged, sendToGoogleSheet } from '@/lib/googleSheet'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -70,6 +71,11 @@ export async function PUT(request, { params }) {
 
   await dbConnect()
   try {
+    const existing = await CaseStudy.findById(id).lean()
+    if (!existing) {
+      return errorResponse('Case study not found', 404)
+    }
+
     const updated = await CaseStudy.findByIdAndUpdate(id, body, {
       new: true,
       runValidators: true,
@@ -78,6 +84,10 @@ export async function PUT(request, { params }) {
 
     if (!updated) {
       return errorResponse('Case study not found', 404)
+    }
+
+    if (sheetDataChanged(existing.sheetData, body.sheetData)) {
+      await sendToGoogleSheet(updated.sheetData)
     }
 
     return NextResponse.json({ caseStudy: serialize(updated) })

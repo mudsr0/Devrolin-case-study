@@ -123,6 +123,16 @@ const ctaSchema = new Schema(
   { _id: false }
 )
 
+const sheetDataSchema = new Schema(
+  {
+    clientName: { type: String, default: '' },
+    skills: { type: String, default: '' },
+    techStack: { type: String, default: '' },
+    description: { type: String, default: '' },
+  },
+  { _id: false }
+)
+
 const CaseStudySchema = new Schema(
   {
     slug: { type: String, required: true, unique: true, trim: true },
@@ -137,6 +147,7 @@ const CaseStudySchema = new Schema(
     testimonial: testimonialSchema,
     process: processSchema,
     cta: ctaSchema,
+    sheetData: sheetDataSchema,
   },
   { timestamps: true }
 )
