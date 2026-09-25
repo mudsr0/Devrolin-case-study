@@ -86,8 +86,10 @@ export async function PUT(request, { params }) {
       return errorResponse('Case study not found', 404)
     }
 
-    if (sheetDataChanged(existing.sheetData, body.sheetData)) {
-      await sendToGoogleSheet(updated.sheetData)
+    const slugChanged = String(existing.slug ?? '') !== String(updated.slug ?? '')
+
+    if (sheetDataChanged(existing.sheetData, updated.sheetData) || slugChanged) {
+      await sendToGoogleSheet(updated.sheetData, updated.slug)
     }
 
     return NextResponse.json({ caseStudy: serialize(updated) })

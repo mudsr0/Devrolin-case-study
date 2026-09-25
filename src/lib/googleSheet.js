@@ -19,7 +19,7 @@ export function sheetDataChanged(previous, next) {
   return SHEET_FIELDS.some((field) => prev[field] !== curr[field])
 }
 
-export async function sendToGoogleSheet(sheetData) {
+export async function sendToGoogleSheet(sheetData, slug) {
   const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL
   if (!webhookUrl) {
     console.warn('[googleSheet] Skipped: GOOGLE_SHEET_WEBHOOK_URL is not set')
@@ -37,6 +37,7 @@ export async function sendToGoogleSheet(sheetData) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        slug: String(slug ?? '').trim(),
         clientName: values.clientName,
         skills: values.skills,
         techStack: values.techStack,

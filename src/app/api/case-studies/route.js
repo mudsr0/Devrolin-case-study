@@ -61,7 +61,7 @@ export async function POST(request) {
   try {
     const created = await CaseStudy.create(body)
 
-    await sendToGoogleSheet(created.sheetData)
+    await sendToGoogleSheet(created.sheetData, created.slug)
 
     return NextResponse.json(
       { caseStudy: serialize(created.toObject()) },
