@@ -44,8 +44,9 @@ export default async function CaseStudyPage({ params }) {
     )
   }
 
+  const { sheetData, ...publicData } = data
   const serialized = {
-    ...data,
+    ...publicData,
     _id: String(data._id),
   }
 
