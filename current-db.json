@@ -1,0 +1,1418 @@
+[
+  {
+    "_id": "6a835ad3b15499396146b575",
+    "slug": "cvlabz",
+    "category": "AI Platform",
+    "clientName": "CV Labz",
+    "hero": {
+      "body": "CV Labz had no system. Users submitted details and waited. We built an AI platform that generates fully formatted, ATS-scored resumes in seconds. Two weeks to build. Zero manual effort after launch."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "AI CV Generator",
+          "desc": "User inputs details, AI produces a fully formatted ATS-ready CV instantly"
+        },
+        {
+          "num": "02",
+          "title": "ATS Scoring Engine",
+          "desc": "Every CV scored up to 10/10 before download"
+        },
+        {
+          "num": "03",
+          "title": "Smart Suggestions",
+          "desc": "AI guides users on keywords, formatting, and role-specific improvements"
+        },
+        {
+          "num": "04",
+          "title": "Instant PDF Export",
+          "desc": "Clean, professional output ready for submission in seconds"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b576",
+    "slug": "pixellift",
+    "category": "AI SaaS Platform",
+    "clientName": "PixelLift",
+    "hero": {
+      "body": "PixelLift was losing revenue to blurry low resolution product images across Amazon, Shopify and eBay stores. We built an AI powered SaaS that scrapes and enhances every image automatically. No manual editing. No quality inconsistency. Just professional visuals at scale."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Multi Platform Scraper",
+          "desc": "Pulls product images from Amazon, Shopify and eBay stores automatically"
+        },
+        {
+          "num": "02",
+          "title": "AI Upscaling Engine",
+          "desc": "Enhances resolution, sharpness and quality on every image instantly"
+        },
+        {
+          "num": "03",
+          "title": "Batch Processing",
+          "desc": "Hundreds of images enhanced in one run with zero manual input"
+        },
+        {
+          "num": "04",
+          "title": "Store Ready Output",
+          "desc": "Clean high resolution images delivered instantly for any storefront"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b578",
+    "slug": "cherrett-chiropractic",
+    "category": "AI Automation",
+    "clientName": "Cherrett Chiropractic",
+    "hero": {
+      "body": "Cherrett Chiropractic had inactive patients sitting in Cliniko with no automated way to reach them. We built a fully automated monthly reactivation pipeline that pulls patients, sends personalized SMS offers, runs an AI booking conversation and writes confirmed appointments back into the diary. It runs itself every month."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Automated Monthly Trigger",
+          "desc": "Make.com pulls inactive patients from Cliniko on the 1st of every month"
+        },
+        {
+          "num": "02",
+          "title": "Personalized SMS Campaign",
+          "desc": "GoHighLevel sends rotating offers with patient first name automatically"
+        },
+        {
+          "num": "03",
+          "title": "AI Booking Bot",
+          "desc": "Two way SMS conversation checks live availability and confirms bookings"
+        },
+        {
+          "num": "04",
+          "title": "Cliniko Write-Back",
+          "desc": "Confirmed appointments written directly into the diary with reactivation notes"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b579",
+    "slug": "prepare2swim",
+    "category": "Email Marketing Automation",
+    "clientName": "Prepare2Swim",
+    "hero": {
+      "body": "Prepare2Swim had an audience, a book and online courses but their email system was broken. Emails hit spam, ManyChat leads were duplicating, and new subscribers heard nothing after signup. We cleaned everything, fixed deliverability and built a welcome automation that works. Delivered in 7 days."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Deliverability Fix",
+          "desc": "SPF DKIM and DMARC configured and verified across Gmail Yahoo and Outlook"
+        },
+        {
+          "num": "02",
+          "title": "Welcome Sequence",
+          "desc": "Automated email series triggering immediately after every signup"
+        },
+        {
+          "num": "03",
+          "title": "ManyChat Integration",
+          "desc": "Clean lead handoff with correct tagging and single entry logic"
+        },
+        {
+          "num": "04",
+          "title": "Account Cleanup",
+          "desc": "Tags segments and subscriber fields restructured for clean scalable operation"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57a",
+    "slug": "emtiyaz-education",
+    "category": "AI Education Platform",
+    "clientName": "Emtiyaz Education",
+    "hero": {
+      "body": "Emtiyaz Education needed more than a course platform. They needed an intelligent system that could manage enrollment, deliver content and answer student questions using the actual course material. We built a complete AI education platform with a custom chatbot trained on every course."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Course Management System",
+          "desc": "Full admin control to create manage and publish courses at scale"
+        },
+        {
+          "num": "02",
+          "title": "Student Enrollment Engine",
+          "desc": "Automated enrollment flow with role based access per course"
+        },
+        {
+          "num": "03",
+          "title": "AI Chatbot",
+          "desc": "Custom trained on course content to answer student questions intelligently"
+        },
+        {
+          "num": "04",
+          "title": "Progress Tracking",
+          "desc": "Students and admins track completion status and performance in real time"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57b",
+    "slug": "real-estate-ai-video",
+    "category": "AI SaaS Platform",
+    "clientName": "Real Estate AI Video",
+    "hero": {
+      "body": "Real estate agents were spending hours creating property marketing videos. We built an AI SaaS where users upload property images and the AI generates professional marketing videos automatically. No editing software. No designer. No wasted time."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Image Upload Engine",
+          "desc": "Users upload property images through a clean drag and drop interface"
+        },
+        {
+          "num": "02",
+          "title": "AI Video Generator",
+          "desc": "AI processes images and generates a professional marketing video automatically"
+        },
+        {
+          "num": "03",
+          "title": "SaaS Dashboard",
+          "desc": "Full user management subscription billing and video history in one panel"
+        },
+        {
+          "num": "04",
+          "title": "Instant Download",
+          "desc": "Finished videos ready to publish on any platform in seconds"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57c",
+    "slug": "mealspo",
+    "category": "AI Food Platform",
+    "clientName": "Mealspo",
+    "hero": {
+      "body": "Mealspo is a platform built for food lovers and chefs who want more than a recipe. Users create their meal and an AI guides them through every decision in real time. From ingredients to technique to plating. We delivered the full POC and proved the concept works."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Meal Creation Flow",
+          "desc": "Users build their meal step by step through a clean guided interface"
+        },
+        {
+          "num": "02",
+          "title": "AI Cooking Guide",
+          "desc": "Real time AI assistance on ingredients technique timing and presentation"
+        },
+        {
+          "num": "03",
+          "title": "Personalized Recommendations",
+          "desc": "AI adapts suggestions based on the meal being created"
+        },
+        {
+          "num": "04",
+          "title": "POC Validation",
+          "desc": "Full working prototype proving the concept is buildable and scalable"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57d",
+    "slug": "vidar-ai-trading",
+    "category": "AI Trading Platform",
+    "clientName": "VIDAR AI",
+    "hero": {
+      "body": "VIDAR AI needed a system that could read live market conditions on MT5 and act on them instantly. We built an AI trading prediction platform that identifies buy and sell opportunities in real time and executes trades autonomously. No human input required after setup."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "MT5 Market Integration",
+          "desc": "Live connection to MT5 reading real time market data continuously"
+        },
+        {
+          "num": "02",
+          "title": "AI Prediction Engine",
+          "desc": "Identifies high probability buy and sell opportunities autonomously"
+        },
+        {
+          "num": "03",
+          "title": "Autonomous Trade Execution",
+          "desc": "Trades placed and managed without any human input"
+        },
+        {
+          "num": "04",
+          "title": "Performance Dashboard",
+          "desc": "Full visibility into trades signals accuracy and portfolio performance"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57e",
+    "slug": "vendor-dashboard-arabic",
+    "category": "Custom Dashboard",
+    "clientName": "Vendor Dashboard",
+    "hero": {
+      "body": "The client needed a fully localized vendor management system for an Arabic speaking market. We built a complete RTL dashboard from scratch  product management, order tracking and business operations all running natively in Arabic. No translation patches. Built right from day one."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Full RTL Interface",
+          "desc": "Complete right to left layout built natively not patched onto an existing system"
+        },
+        {
+          "num": "02",
+          "title": "Product Management",
+          "desc": "Vendors add edit and manage products entirely in Arabic"
+        },
+        {
+          "num": "03",
+          "title": "Order Tracking",
+          "desc": "Real time order status and management in a fully localized interface"
+        },
+        {
+          "num": "04",
+          "title": "Business Operations Panel",
+          "desc": "Revenue reporting and vendor analytics in Arabic from day one"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b57f",
+    "slug": "panorama-brand-website",
+    "category": "Brand Website",
+    "clientName": "Panorama",
+    "hero": {
+      "body": "Panorama needed a brand website that matched their premium positioning. We built it on MERN Stack with Three.js powering immersive 3D visuals and animations that make the experience unforgettable. Not a template. Not a theme. A world class digital presence built from scratch."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Three.js 3D Engine",
+          "desc": "Immersive three dimensional visuals and animations running in the browser"
+        },
+        {
+          "num": "02",
+          "title": "MERN Stack Foundation",
+          "desc": "Scalable performant full stack architecture built for long term growth"
+        },
+        {
+          "num": "03",
+          "title": "Premium Motion Design",
+          "desc": "Scroll triggered animations and transitions that command attention"
+        },
+        {
+          "num": "04",
+          "title": "Brand Aligned Experience",
+          "desc": "Every pixel purposefully designed to match Panorama's premium identity"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b580",
+    "slug": "grill-gear",
+    "category": "eCommerce Website",
+    "clientName": "Grill Gear",
+    "hero": {
+      "body": "Grill Gear needed a fully functional eCommerce website that matched their brand and converted visitors into buyers. We built a complete WordPress WooCommerce store from scratch  product listings, cart, checkout and everything in between. Built to sell from day one."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "WooCommerce Store",
+          "desc": "Full product listings categories cart and checkout built on WordPress"
+        },
+        {
+          "num": "02",
+          "title": "Brand Design",
+          "desc": "Storefront designed to match Grill Gear's identity and outdoor brand aesthetic"
+        },
+        {
+          "num": "03",
+          "title": "Product Management",
+          "desc": "Admin panel to add edit and manage products inventory and pricing"
+        },
+        {
+          "num": "04",
+          "title": "Mobile Optimized",
+          "desc": "Fully responsive experience across desktop tablet and mobile"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b581",
+    "slug": "tdlr-driving-school",
+    "category": "EdTech Platform",
+    "clientName": "Coach W",
+    "hero": {
+      "body": "Coach W had a WordPress LearnDash platform that looked ready but was failing on every compliance requirement. Seat time was bypassable, certificates were generating incorrectly and serial numbers were manual. We rebuilt everything that mattered and delivered a fully TDLR compliant platform across four course types."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Seat Time Enforcement",
+          "desc": "Daily and total hour caps enforced across all four course types with zero bypass"
+        },
+        {
+          "num": "02",
+          "title": "Certificate Automation",
+          "desc": "DE-964E and DE-964 generating correctly with all required conditions met"
+        },
+        {
+          "num": "03",
+          "title": "Serial Number System",
+          "desc": "Auto-assigned unique serials with duplicate prevention and reprint logic"
+        },
+        {
+          "num": "04",
+          "title": "Parent E-Signature Compliance",
+          "desc": "Mandatory timestamped signatures blocking certificate issuance until captured"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b582",
+    "slug": "ai-voice-agent",
+    "category": "AI Automation",
+    "clientName": "AI Voice Agent",
+    "hero": {
+      "body": "The client needed a system that could handle inbound and outbound calls without a human on the line. We built a fully automated AI voice agent using VAPI and Twilio that picks up calls, qualifies leads, answers questions and books appointments. Runs 24 hours a day without a single staff member involved."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Inbound AI Agent",
+          "desc": "Answers every call instantly qualifies leads and routes conversations intelligently"
+        },
+        {
+          "num": "02",
+          "title": "Outbound AI Agent",
+          "desc": "Automated outbound calls with natural conversation flow and follow up logic"
+        },
+        {
+          "num": "03",
+          "title": "VAPI and Twilio Stack",
+          "desc": "Production grade telephony infrastructure handling real calls at scale"
+        },
+        {
+          "num": "04",
+          "title": "Appointment Booking",
+          "desc": "AI books confirmed appointments directly from the call without human input"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b583",
+    "slug": "ai-instagram-auto-reply",
+    "category": "Social Media Automation",
+    "clientName": "AI Instagram Auto Reply",
+    "hero": {
+      "body": "The client was losing engagement and leads because Instagram comments piled up with no one responding fast enough. We built an AI auto reply system that responds to every comment instantly with intelligent context aware replies. Engagement runs 24 hours a day without anyone touching the account."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "AI Comment Detection",
+          "desc": "System reads every incoming comment and determines the right response type"
+        },
+        {
+          "num": "02",
+          "title": "Context Aware Replies",
+          "desc": "AI generates replies that match the post content and comment intent"
+        },
+        {
+          "num": "03",
+          "title": "24/7 Automation",
+          "desc": "Comments answered instantly at any hour with zero manual involvement"
+        },
+        {
+          "num": "04",
+          "title": "Lead Capture Logic",
+          "desc": "High intent comments routed to DM flow for conversion"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b584",
+    "slug": "monday-onboarding-automation",
+    "category": "CRM Automation",
+    "clientName": "Monday Onboarding",
+    "hero": {
+      "body": "The client was onboarding new clients manually  emails sent one by one tasks assigned by hand and follow ups missed constantly. We built a complete Monday.com automation that handles onboarding, client management, inbound and outbound email marketing all in one connected workflow."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Automated Onboarding Workflow",
+          "desc": "New clients trigger a structured sequence of tasks and communications automatically"
+        },
+        {
+          "num": "02",
+          "title": "Email Marketing Integration",
+          "desc": "Inbound and outbound campaigns running from inside Monday.com"
+        },
+        {
+          "num": "03",
+          "title": "Client Management Board",
+          "desc": "Full visibility into every client status task and milestone in one view"
+        },
+        {
+          "num": "04",
+          "title": "Lead Nurture Automation",
+          "desc": "Inbound leads enter automated sequences with zero manual input required"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b585",
+    "slug": "ai-blog-generator",
+    "category": "AI Content Tool",
+    "clientName": "AI Blog Generator",
+    "hero": {
+      "body": "The client needed a scalable content solution that could produce full blog posts with images on any topic without a writer involved. We built an AI blog generation platform that takes a topic input and returns a complete publish ready article with generated images in seconds."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Topic Input Engine",
+          "desc": "User enters any topic and the AI begins generating a full structured article instantly"
+        },
+        {
+          "num": "02",
+          "title": "AI Article Generator",
+          "desc": "Complete blog post produced with headings subheadings and body copy in seconds"
+        },
+        {
+          "num": "03",
+          "title": "AI Image Generator",
+          "desc": "Relevant images generated and embedded automatically for every article"
+        },
+        {
+          "num": "04",
+          "title": "Publish Ready Output",
+          "desc": "Clean formatted content ready to paste directly into any CMS"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b586",
+    "slug": "ai-image-generator",
+    "category": "AI Creative Tool",
+    "clientName": "AI Image Generator",
+    "hero": {
+      "body": "The client needed a flexible AI image generation tool that could produce custom visuals in any frame size and aspect ratio from a simple text input. We built it on DALL-E delivering professional grade images in seconds with full control over dimensions and style."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Text to Image Engine",
+          "desc": "User enters a prompt and DALL-E generates a professional image instantly"
+        },
+        {
+          "num": "02",
+          "title": "Custom Frame Control",
+          "desc": "Any aspect ratio and frame size supported from square to widescreen and beyond"
+        },
+        {
+          "num": "03",
+          "title": "Style Selection",
+          "desc": "Users control visual style tone and aesthetic through natural language input"
+        },
+        {
+          "num": "04",
+          "title": "Instant Download",
+          "desc": "High resolution image ready to use in any format immediately after generation"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b587",
+    "slug": "cover-letter-generator",
+    "category": "AI Career Tool",
+    "clientName": "Cover Letter Generator",
+    "hero": {
+      "body": "Job seekers were spending hours crafting cover letters that still did not stand out. We built an AI cover letter generator that takes the user's background and target role and produces a compelling personalized letter that gets read. Fast professional and tailored every time."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "User Input Engine",
+          "desc": "Collects background experience and target role to inform the AI generation"
+        },
+        {
+          "num": "02",
+          "title": "AI Letter Generator",
+          "desc": "Produces a compelling personalized cover letter tailored to the specific role"
+        },
+        {
+          "num": "03",
+          "title": "Smart Guidance Layer",
+          "desc": "AI advises on tone structure and what hiring managers look for"
+        },
+        {
+          "num": "04",
+          "title": "Instant Export",
+          "desc": "Clean formatted letter ready to send with every application immediately"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b588",
+    "slug": "interview-notebook",
+    "category": "AI Career Tool",
+    "clientName": "Interview Notebook",
+    "hero": {
+      "body": "Candidates were failing interviews not because they lacked skills but because they did not know the company, the culture or what the role actually demanded. We built Interview Notebook  an AI that researches the company, understands the position and prepares the candidate with exactly what they need to walk in ready."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Company Intelligence",
+          "desc": "AI researches the company structure culture values and recent news automatically"
+        },
+        {
+          "num": "02",
+          "title": "Role Specific Prep",
+          "desc": "Tailored guidance based on the exact position the candidate is interviewing for"
+        },
+        {
+          "num": "03",
+          "title": "Question Prediction Engine",
+          "desc": "AI generates likely interview questions based on role and company profile"
+        },
+        {
+          "num": "04",
+          "title": "Confidence Builder",
+          "desc": "Structured preparation path that builds real readiness not surface level notes"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b589",
+    "slug": "ai-interview-simulator",
+    "category": "AI Career Tool",
+    "clientName": "AI Interview Simulator",
+    "hero": {
+      "body": "Candidates had no way to practice real interviews before the real thing. We built an AI interview simulator that conducts full mock interviews, asks niche specific questions, evaluates answers in real time and gives actionable feedback. Practice that actually prepares you."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "AI Interviewer",
+          "desc": "Conducts a full structured interview with natural conversational flow"
+        },
+        {
+          "num": "02",
+          "title": "Niche Specific Questions",
+          "desc": "Questions generated based on the exact role industry and seniority level"
+        },
+        {
+          "num": "03",
+          "title": "Real Time Evaluation",
+          "desc": "AI assesses each answer and flags weak areas immediately"
+        },
+        {
+          "num": "04",
+          "title": "Actionable Feedback Engine",
+          "desc": "Detailed post session report with specific improvements for each answer"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58a",
+    "slug": "tele-wordpress-deployer",
+    "category": "AI Automation",
+    "clientName": "Telegram WordPress Deployer",
+    "hero": {
+      "body": "The client needed a way to spin up complete WordPress websites without touching a server, writing code or using a dashboard. We built an AI automation where users enter their requirements in Telegram and the system generates a full WordPress website and deploys it live on a VPS automatically. Start to live in minutes."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Telegram Input Interface",
+          "desc": "User types site requirements in Telegram chat  no dashboard no code"
+        },
+        {
+          "num": "02",
+          "title": "AI Site Generator",
+          "desc": "AI processes the input and generates a complete configured WordPress site"
+        },
+        {
+          "num": "03",
+          "title": "VPS Auto Deployment",
+          "desc": "System deploys the generated site live on the VPS server automatically"
+        },
+        {
+          "num": "04",
+          "title": "Live Confirmation",
+          "desc": "User receives a live URL in Telegram the moment deployment completes"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58b",
+    "slug": "writeitaus-chrome-extension",
+    "category": "Browser Extension",
+    "clientName": "Write-It.us",
+    "hero": {
+      "body": "Write-It.us needed a Chrome extension that could access and enhance Google Docs content without requiring OAuth permissions from every user. We built a browser extension with an approval based AI writing flow, humanizer integration and OAuth free document access using browser based scraping and AWS backend."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "OAuth Free Doc Access",
+          "desc": "Browser based document scraping reads Google Docs without any permission requirements"
+        },
+        {
+          "num": "02",
+          "title": "Approval Based Writing",
+          "desc": "AI suggestions appear in a review container before applying to the document"
+        },
+        {
+          "num": "03",
+          "title": "Humanizer Integration",
+          "desc": "One click humanization within the same approval flow  no separate tool"
+        },
+        {
+          "num": "04",
+          "title": "Clean Stop Functionality",
+          "desc": "Backend process terminates instantly when user clicks stop  no rogue insertions"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58c",
+    "slug": "zoho-crm-property-pipeline",
+    "category": "CRM Automation",
+    "clientName": "Zoho Property Services",
+    "hero": {
+      "body": "The property services company had leads coming in with no structured system to manage them. Follow ups missed deals lost and the team operating without visibility. We built a fully automated workflow pipeline inside Zoho CRM that captures every lead routes it correctly and follows up automatically without anyone chasing anything manually."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Automated Lead Capture",
+          "desc": "Every inbound lead enters Zoho CRM automatically with correct routing and assignment"
+        },
+        {
+          "num": "02",
+          "title": "Workflow Automation",
+          "desc": "Stage based triggers fire tasks follow ups and notifications without manual input"
+        },
+        {
+          "num": "03",
+          "title": "Pipeline Dashboard",
+          "desc": "Full real time visibility into every deal stage team activity and conversion rate"
+        },
+        {
+          "num": "04",
+          "title": "Client Follow Up Engine",
+          "desc": "Automated sequences ensure no client goes uncontacted at any stage"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58d",
+    "slug": "apartmentmaid-marketing-automation",
+    "category": "Marketing Automation",
+    "clientName": "ApartmentMaid",
+    "hero": {
+      "body": "ApartmentMaid was losing tenants between first contact and booking with no automated way to re-engage them. We built a complete multi-channel lifecycle automation covering every stage from initial outreach through booking payment and long term retention using OneSignal SMS Email and WhatsApp."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Multi Channel Outreach",
+          "desc": "Personalized SMS Email and WhatsApp campaigns across every lifecycle stage"
+        },
+        {
+          "num": "02",
+          "title": "Checkout Recovery",
+          "desc": "Automated follow up triggers for tenants who started booking but did not complete"
+        },
+        {
+          "num": "03",
+          "title": "Retention Sequences",
+          "desc": "Post booking communication keeping tenants engaged and driving repeat bookings"
+        },
+        {
+          "num": "04",
+          "title": "Custom Event Tracking",
+          "desc": "Booking started payment complete and clean completed events tracked and actioned"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58e",
+    "slug": "ai-grant-matching-platform",
+    "category": "AI SaaS Platform",
+    "clientName": "Zerodown Smart Start",
+    "hero": {
+      "body": "Zerodown Smart Start was spending hours manually researching and matching grants for clients. We built a full scale AI powered grant matching platform with GPT-4 eligibility scoring grant stacking logic auto generated PDF reports a complete client portal admin panel and an LMS  all in three weeks."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "AI Eligibility Engine",
+          "desc": "GPT-4 scores and ranks grants based on weighted eligibility logic per client"
+        },
+        {
+          "num": "02",
+          "title": "Grant Stacking Logic",
+          "desc": "System identifies compatible grants and groups them for maximum funding"
+        },
+        {
+          "num": "03",
+          "title": "Client Portal",
+          "desc": "Clients track status upload documents message admin and access LMS modules"
+        },
+        {
+          "num": "04",
+          "title": "Auto PDF Reports",
+          "desc": "Professional grant match reports generated and delivered automatically"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b58f",
+    "slug": "anatome-lifecycle",
+    "category": "eCommerce Automation",
+    "clientName": "Anatome",
+    "hero": {
+      "body": "Anatome had Shopify Klaviyo Octane AI Gorgias Love Loyalty and Seal Subscriptions all running as isolated tools. Revenue was leaking at every stage. We integrated all six into one connected customer lifecycle engine  from first quiz to loyal subscriber  built for a premium luxury brand."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Quiz to Klaviyo Integration",
+          "desc": "Octane AI quiz data syncs into Klaviyo as custom properties powering personalized flows"
+        },
+        {
+          "num": "02",
+          "title": "Loyalty Tier Architecture",
+          "desc": "Love Loyalty tiers points logic and Klaviyo flows built from scratch"
+        },
+        {
+          "num": "03",
+          "title": "Subscription Conversion Flow",
+          "desc": "Seal Subscriptions embedded into post purchase and loyalty journeys"
+        },
+        {
+          "num": "04",
+          "title": "Gorgias Conversion Config",
+          "desc": "Live chat activated on product and checkout pages with AI FAQ responses"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b590",
+    "slug": "filevine-khachikyan-law",
+    "category": "Legal Tech Automation",
+    "clientName": "Khachikyan Law",
+    "hero": {
+      "body": "Khachikyan Law had FileVine in place but the platform was barely being used. Tasks assigned manually, demand letters taking hours and clients calling constantly for updates. We rebuilt the entire system  phases automations Outlaw document generation Demands AI and a self serve client portal. Delivered in 15 days."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Automated Phase Workflows",
+          "desc": "Task flows trigger automatically on every phase change across PI and Lemon Law cases"
+        },
+        {
+          "num": "02",
+          "title": "Outlaw Document Generation",
+          "desc": "One click demand letters retainer agreements and settlement docs auto populated from case data"
+        },
+        {
+          "num": "03",
+          "title": "Demands AI Activation",
+          "desc": "AI generates professional demand letters in minutes replacing hours of manual drafting"
+        },
+        {
+          "num": "04",
+          "title": "Client Self Serve Portal",
+          "desc": "Clients access case status documents and messaging 24/7 without calling the office"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b591",
+    "slug": "landbot-turbotranslate",
+    "category": "Chatbot & Conversion Optimization",
+    "clientName": "TurboTranslate",
+    "hero": {
+      "body": "TurboTranslate was spending on PPC across 13 landing pages and watching visitors leave without converting. We built a Landbot chatbot deployed across 17 pages that engages every visitor qualifies their document needs captures payment via Stripe and routes urgent conversations to a live agent. All inside the chat."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "17 Page Chatbot Deployment",
+          "desc": "Document specific bot deployed across 13 PPC pages homepage checkout and free quote"
+        },
+        {
+          "num": "02",
+          "title": "In Chat Stripe Payment",
+          "desc": "Full conversion flow from document upload to price calculation to payment inside the chat"
+        },
+        {
+          "num": "03",
+          "title": "Checkout Abandonment Recovery",
+          "desc": "Bot auto opens at 45 seconds on the order page to recover incomplete purchases"
+        },
+        {
+          "num": "04",
+          "title": "Human Takeover System",
+          "desc": "Urgency keywords trigger live agent takeover for high intent conversations"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b592",
+    "slug": "hermes-ai-agent",
+    "category": "AI Creative Automation",
+    "clientName": "Hermes AI",
+    "hero": {
+      "body": "Brian was spending hours per ad writing scripts sourcing b-roll and recording voiceovers. We deployed Hermes AI Agent on his VPS  add a product to Airtable and the system automatically generates the script with Claude produces the voiceover with ElevenLabs and matches b-roll from Pexels. Complete ad creative with zero manual work."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Claude Script Generator",
+          "desc": "Airtable product entry triggers Claude to write a full scene by scene ad script instantly"
+        },
+        {
+          "num": "02",
+          "title": "ElevenLabs Voiceover",
+          "desc": "Complete professional voiceover generated automatically from the script"
+        },
+        {
+          "num": "03",
+          "title": "Pexels B-roll Matching",
+          "desc": "Each scene matched to relevant footage automatically from Pexels library"
+        },
+        {
+          "num": "04",
+          "title": "Airtable Output Queue",
+          "desc": "All assets organized and ready for review and launch in one place"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b594",
+    "slug": "freshsales-conversion-tracking",
+    "category": "Marketing Analytics",
+    "clientName": "Eyal Dror",
+    "hero": {
+      "body": "Eyal Dror was running Google Ads and LinkedIn Ads with zero conversion tracking connected to FreshSales. Every lead that came in was invisible to both ad platforms making optimization impossible. We built a complete privacy compliant conversion pipeline connecting FreshSales to both platforms simultaneously in real time."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "FreshSales to Zapier",
+          "desc": "Form submissions trigger Zapier webhook in real time with all lead data"
+        },
+        {
+          "num": "02",
+          "title": "Google Ads Conversion API",
+          "desc": "Lead events mapped and sent to Google Ads Conversion API via Zapier instantly"
+        },
+        {
+          "num": "03",
+          "title": "LinkedIn Conversion API",
+          "desc": "SHA-256 hashed user data sent to LinkedIn Ads API simultaneously"
+        },
+        {
+          "num": "04",
+          "title": "GTM Consent Mode v2",
+          "desc": "Full consent framework implemented with data layer push and privacy compliance"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b595",
+    "slug": "awf-revenue-os",
+    "category": "CRM & Business Intelligence",
+    "clientName": "Advanced Window Films",
+    "hero": {
+      "body": "Advanced Window Films had leads coming in across multiple locations with no unified system to track them. Revenue was unattributed, marketing ROI was unknown and staff performance was invisible. We built AWF Revenue OS  a complete Airtable CRM with automated lead capture, revenue tracking, staff splits and a live ROI dashboard. Delivered in two days."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Automated Lead Capture",
+          "desc": "Outlook emails trigger new lead rows in Airtable automatically via Zapier"
+        },
+        {
+          "num": "02",
+          "title": "Revenue Attribution",
+          "desc": "Every job linked to its lead source for accurate channel ROI calculation"
+        },
+        {
+          "num": "03",
+          "title": "Staff Revenue Splits",
+          "desc": "Job assignments track which team member generated each pound of revenue"
+        },
+        {
+          "num": "04",
+          "title": "Live ROI Dashboard",
+          "desc": "Marketing spend vs revenue by channel updated automatically as jobs are added"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b596",
+    "slug": "whp-protocol",
+    "category": "Health Data Platform",
+    "clientName": "WHP Protocol",
+    "hero": {
+      "body": "WHP Protocol needed a clinical grade metabolic tracking system that could capture daily biometrics Oura Ring data and quarterly lab results in one relational database. We built a fully automated Airtable system with GKI formula calculations conditional health zone color coding photo logging and an investor ready dual axis executive dashboard."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "3 Table Relational Database",
+          "desc": "Daily Biometrics Photo Logs and Quarterly Blood Panel fully linked in Airtable"
+        },
+        {
+          "num": "02",
+          "title": "Auto GKI Formula",
+          "desc": "Blood Glucose divided by 18 divided by Blood Ketones calculated and color coded instantly"
+        },
+        {
+          "num": "03",
+          "title": "Mobile Input Interface",
+          "desc": "Frictionless daily entry form with 4 photo upload optimized for phone use"
+        },
+        {
+          "num": "04",
+          "title": "Executive Dashboard",
+          "desc": "Dual axis HRV vs Glucose and Insulin chart with 7 30 and 90 day timeframe filters"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b597",
+    "slug": "telegram-website-creator",
+    "category": "AI Automation",
+    "clientName": "Dennis",
+    "hero": {
+      "body": "Dennis needed a way to spin up fully branded WordPress websites for clients without touching a server or a dashboard. We built a Telegram bot that collects all requirements through a guided chat purchases the domain from Namecheap creates the email account duplicates the WordPress template on Coolify VPS and delivers a live site with all credentials in under 10 minutes."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Telegram Collection Flow",
+          "desc": "Bot guides user through all requirements via structured chat with buttons and inputs"
+        },
+        {
+          "num": "02",
+          "title": "Namecheap Domain Purchase",
+          "desc": "Domain bought and DNS configured automatically via Namecheap API"
+        },
+        {
+          "num": "03",
+          "title": "WordPress Template Duplication",
+          "desc": "Coolify VPS duplicates the template and applies all client branding instantly"
+        },
+        {
+          "num": "04",
+          "title": "Live Delivery in Telegram",
+          "desc": "User receives live URL login credentials and email details directly in chat"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b598",
+    "slug": "student-career-platform",
+    "category": "EdTech Platform",
+    "clientName": "Ali and Partners",
+    "hero": {
+      "body": "Ali and Partners needed a comprehensive career platform for university students  job board community forums AI CV review application tracking and verified student profiles all in one place. We built the entire platform on MERN Stack with Socket.io real time chat and OpenAI integration. Five features delivered in five weeks."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "AI CV Review",
+          "desc": "Students upload CVs and receive ATS scoring and intelligent feedback powered by OpenAI"
+        },
+        {
+          "num": "02",
+          "title": "Job Board",
+          "desc": "Admin managed listings with search filter and category system for internships and full time roles"
+        },
+        {
+          "num": "03",
+          "title": "Real Time Community",
+          "desc": "Forum threads and private messaging with Socket.io delivering messages instantly"
+        },
+        {
+          "num": "04",
+          "title": "Application Tracker",
+          "desc": "Kanban board with color coded status tracking deadlines and progress statistics"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b599",
+    "slug": "github-city-scraper-codepark",
+    "category": "Data Engineering",
+    "clientName": "CodePark",
+    "hero": {
+      "body": "CodePark needed complete GitHub developer datasets per city but GitHub hard caps search results at 1000 regardless of actual city population. We built a fault tolerant scraper that subdivides queries by repository count and creation date to extract 100% of developers in any city with LinkedIn profile matching auto resume and zero duplicates."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Intelligent Query Subdivision",
+          "desc": "Repo and date based slicing bypasses 1000 result cap to extract 100% of city developers"
+        },
+        {
+          "num": "02",
+          "title": "Auto Resume Engine",
+          "desc": "Progress saved in real time  crashes resume exactly where they stopped"
+        },
+        {
+          "num": "03",
+          "title": "Duplicate Prevention",
+          "desc": "Username tracking and database uniqueness constraints across all runs"
+        },
+        {
+          "num": "04",
+          "title": "Google LinkedIn Matcher",
+          "desc": "Name city and keyword search generates scored LinkedIn profile matches per developer"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b59a",
+    "slug": "ai-foreclosure-system",
+    "category": "AI Automation",
+    "clientName": "Luc Manigat",
+    "hero": {
+      "body": "Luc Manigat needed a hands free foreclosure lead pipeline. Leads coming in from PropStream were being manually exported skip traced individually and entered into GHL one by one. We connected everything  PropStream to n8n to REISkip to GoHighLevel  with AI outreach appointment booking and Looker Studio reporting running automatically."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "PropStream to n8n",
+          "desc": "Real time webhook captures every new pre-foreclosure lead automatically"
+        },
+        {
+          "num": "02",
+          "title": "REISkip Auto Skip Trace",
+          "desc": "n8n forwards each lead to REISkip API returning phone numbers and emails instantly"
+        },
+        {
+          "num": "03",
+          "title": "GoHighLevel AI Outreach",
+          "desc": "Enriched leads trigger automated SMS email and AI conversation sequences"
+        },
+        {
+          "num": "04",
+          "title": "Looker Studio Dashboard",
+          "desc": "Full pipeline visibility from lead count to skip trace rate to appointments booked"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b59b",
+    "slug": "human-attention-verification",
+    "category": "Browser Technology",
+    "clientName": "Olha",
+    "hero": {
+      "body": "Olha needed a way to verify real human attention during video playback before unlocking a WooCommerce reward. We built a fully browser based attention verification system using MediaPipe face detection that tracks face visibility head pose and tab focus in real time with zero server side processing and full GDPR compliance."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "MediaPipe Face Detection",
+          "desc": "Real time face tracking and head pose validation running 100% client side"
+        },
+        {
+          "num": "02",
+          "title": "Tab Focus Monitor",
+          "desc": "Attention timer pauses instantly when user switches tabs or minimizes"
+        },
+        {
+          "num": "03",
+          "title": "Firebase Session Logging",
+          "desc": "Every attention event logged securely to Firestore with strict write rules"
+        },
+        {
+          "num": "04",
+          "title": "WooCommerce Reward Trigger",
+          "desc": "Verified completion unlocks discount or premium content automatically"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a835ad3b15499396146b59c",
+    "slug": "chelan-parasail",
+    "category": "Brand Website",
+    "clientName": "Chelan Parasail",
+    "hero": {
+      "body": "Chelan Parasail and Watersports has been Washington State's only parasail operator since 1993. Their digital presence did not reflect that legacy. We built a brand website that captures the energy of the experience converts visitors into bookings and gives the business the online presence its 30 year reputation deserves."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Brand Identity Design",
+          "desc": "Visual language capturing the energy of Lake Chelan and the parasail experience"
+        },
+        {
+          "num": "02",
+          "title": "Online Booking Integration",
+          "desc": "Clear booking flow for parasail jet ski and boat rental with availability and pricing"
+        },
+        {
+          "num": "03",
+          "title": "Mobile First Build",
+          "desc": "Fully responsive experience optimized for the visitors arriving from social and search"
+        },
+        {
+          "num": "04",
+          "title": "Service Hierarchy",
+          "desc": "Each offering presented with clear differentiation pricing and a strong call to action"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a8eeec47f9ceccfa1057012",
+    "slug": "hubspot-pipeline",
+    "category": "CRM ( HubSpot )",
+    "clientName": "",
+    "hero": {
+      "body": "Built a structured HubSpot sales system that automatically moves leads from initial action to the correct deal pipeline and stage, removing the need for manual deal management.\n\nThe workflow automatically creates deals, assigns owners, updates deal stages, triggers follow-up tasks, sends emails, and updates CRM properties based on customer actions. This gives the sales team a clear next action for every opportunity while keeping the entire customer journey organized and trackable inside HubSpot.\n\nUse Case: Lead/Customer Action → Deal Creation → Pipeline Assignment → Deal Stage → Owner Assignment → Automated Follow-Ups → Conversion"
+    },
+    "built": {
+      "items": [
+        {
+          "num": "1",
+          "title": "Automated Deal Creation",
+          "desc": "Customer actions automatically create the right deal in HubSpot, eliminating repetitive manual entry."
+        },
+        {
+          "num": "2",
+          "title": "Pipeline & Stage Routing",
+          "desc": "Every new deal is automatically routed into the correct pipeline and deal stage based on its trigger."
+        },
+        {
+          "num": "3",
+          "title": "Owner & Follow-Up Automation",
+          "desc": "HubSpot assigns the right owner and automatically triggers tasks, emails, and follow-up actions."
+        },
+        {
+          "num": "4",
+          "title": "Workflow-Driven Sales Process",
+          "desc": "Stage changes trigger the next workflow, keeping every opportunity moving without relying on manual follow-ups."
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a8ef138f33d2454c401919f",
+    "slug": "Hubspot_Agentic",
+    "category": "AI Automation Infrastructure & Hubspot",
+    "clientName": "Tiffany Makeever",
+    "hero": {
+      "body": "Tiffany Makeever's agency ran on five tools that never talked to each other. Tasks lived in Asana. Contacts lived in HubSpot. Files lived in Drive. Updates lived in Slack. And everything in between was done manually. We built a fully agentic Claude workspace on a hardened Ubuntu VPS connected to every tool through MCP, executing 12 real automations across live client accounts, running 24 hours a day without a single manual step."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "01",
+          "title": "Hardened Ubuntu VPS",
+          "desc": "24/7 Claude Desktop session via tmux with auto restart on crash, full logging and RDP remote access for monitoring"
+        },
+        {
+          "num": "02",
+          "title": "Asana MCP Integration ",
+          "desc": "Claude reads task boards, updates statuses, creates subtasks, moves cards between stages and triggers downstream actions all based on what it finds in the project"
+        },
+        {
+          "num": "03",
+          "title": "HubSpot MCP Integration ",
+          "desc": "Claude manages contacts, updates CRM properties, triggers deal stage workflows and logs activity autonomously the CRM runs itself"
+        },
+        {
+          "num": "04",
+          "title": "Google Drive, Slack and Filesystem MCP",
+          "desc": "Claude reads input files from Drive, writes completed reports back, sends Slack alerts to the right channels and manages local files in the agency Work directory"
+        },
+        {
+          "num": "05",
+          "title": " 12 Agency Automations",
+          "desc": "Task-triggered CRM updates, automated client report generation, deal stage progressions, Slack notification sequences, Gmail draft creation and multi-step cross-tool workflows all built against Tiffany's exact agency playbook"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a99b0106a49c47fd4a1cebe",
+    "slug": "Shopify-Website",
+    "category": "E-Commerce",
+    "clientName": "Relentless Labz",
+    "hero": {
+      "body": "We built a modern Shopify e-commerce experience for Relentless Labz, a performance supplement brand offering pre-workouts, energy drinks, fat burners, hydration products and other performance-focused supplements."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "1",
+          "title": "Product Catalog",
+          "desc": "Organized product collections across pre-workout, fat burner, energy drinks, hydration, and other supplement categories."
+        },
+        {
+          "num": "2",
+          "title": "Product Discovery",
+          "desc": "Featured products, sample packs, collections, and top picks help customers quickly discover products."
+        },
+        {
+          "num": "3",
+          "title": "Product Pages",
+          "desc": "Dedicated product pages were structured to showcase individual supplements and purchasing options."
+        },
+        {
+          "num": "4",
+          "title": "Shopping Experience",
+          "desc": "Integrated storefront navigation, account access, cart functionality, and direct product purchasing."
+        },
+        {
+          "num": "5",
+          "title": "Brand Sections",
+          "desc": "Performance-focused content sections communicate product quality, trusted formulas, fast shipping, and the brand's core positioning."
+        },
+        {
+          "num": "6",
+          "title": "Customer Engagement",
+          "desc": "Performance-focused content sections communicate product quality, trusted formulas, fast shipping, and the brand's core positioning."
+        }
+      ]
+    }
+  },
+  {
+    "_id": "6a9c4790a3fcf70b3968952e",
+    "slug": "GHL-Work",
+    "category": "CRM Setup",
+    "clientName": "Mr.Dermot Advanced Window Films",
+    "hero": {
+      "body": "Advanced Window Films were running Facebook ads and capturing website enquiries but had no CRM, no automations and no way to track what happened after a lead came in. We built the full system dual pipelines, Meta integration, WhatsApp sequences, professional email infrastructure and a live revenue dashboard. It all runs without the team having to think about it."
+    },
+    "built": {
+      "items": [
+        {
+          "num": "1",
+          "title": "Dual Pipeline Setup",
+          "desc": "Meta Leads and website enquiries tracked separately, both running New → Contacted → Qualified → Quoted → Won → Lost"
+        },
+        {
+          "num": "2",
+          "title": "Meta Integration & Lead Import",
+          "desc": "Facebook page connected, 5 ad forms mapped, 233 existing leads imported with zero duplicates"
+        },
+        {
+          "num": "3",
+          "title": "WhatsApp Automation Sequence",
+          "desc": "3-message welcome sequence fires automatically on every new Facebook lead, 1 day apart"
+        },
+        {
+          "num": "4",
+          "title": "10 Meta-Approved WhatsApp Templates",
+          "desc": "Covering quotes, bookings, reminders, payment confirmation, follow-ups and reconnects"
+        },
+        {
+          "num": "5",
+          "title": "Professional Email Infrastructure",
+          "desc": "Dedicated quotes@awf.ie configured in GHL, DNS and SPF conflicts resolved, domain verified and warming"
+        },
+        {
+          "num": "6",
+          "title": "6 Live Automations",
+          "desc": "Staff alerts, 48-hour idle reminders, first response overdue notifications, won-lead job creation pushing to Tradify"
+        },
+        {
+          "num": "7",
+          "title": "Revenue Dashboard",
+          "desc": "Live pipeline value and stage conversion across both channels in one view"
+        }
+      ]
+    }
+  }
+]

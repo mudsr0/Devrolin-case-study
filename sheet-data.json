@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "cvlabz",
+    "clientName": "CV Labz",
+    "skills": "AI Platform, Resume Generation, ATS Scoring, SaaS",
+    "techStack": "Next.js, OpenAI API, MongoDB, PDF Export",
+    "description": "Built an AI-powered resume generation platform that takes user inputs and produces fully formatted, ATS-ready CVs in seconds. Includes an ATS scoring engine that grades every resume up to 10/10, smart keyword and formatting suggestions, and instant PDF export. Eliminated the manual resume creation process entirely. Delivered in two weeks with zero manual effort after launch."
+  },
+  {
+    "slug": "pixellift",
+    "clientName": "PixelLift",
+    "skills": "AI SaaS, Image Enhancement, eCommerce, Web Scraping",
+    "techStack": "Next.js, AI Upscaling API, MongoDB, Stripe",
+    "description": "Built an AI-powered SaaS that automatically scrapes product images from Amazon, Shopify, and eBay storefronts and enhances them using an AI upscaling engine. Batch processes hundreds of images in a single run with no manual input and delivers store-ready, high-resolution output. Solved a direct revenue loss problem caused by low-quality product visuals at scale."
+  },
+  {
+    "slug": "cherrett-chiropractic",
+    "clientName": "Cherrett Chiropractic",
+    "skills": "AI Automation, Patient Reactivation, SMS Marketing, Booking",
+    "techStack": "Make.com, GoHighLevel, Cliniko, AI SMS Bot",
+    "description": "Built a fully automated monthly patient reactivation pipeline for a chiropractic clinic. Make.com pulls inactive patients from Cliniko on the 1st of each month, GoHighLevel sends personalized SMS campaigns with rotating offers, and an AI bot handles two-way SMS conversations to confirm appointments. Confirmed bookings are written directly back into the Cliniko diary with reactivation notes. Runs entirely without human involvement every month."
+  },
+  {
+    "slug": "prepare2swim",
+    "clientName": "Prepare2Swim",
+    "skills": "Email Marketing, Deliverability, Marketing Automation, ManyChat",
+    "techStack": "ActiveCampaign, ManyChat, SPF/DKIM/DMARC, DNS",
+    "description": "Fixed broken email deliverability and rebuilt the full marketing automation system for a swimming training brand. Configured SPF, DKIM, and DMARC across Gmail, Yahoo, and Outlook. Resolved ManyChat lead duplication and restructured tags, segments, and subscriber fields. Built and activated a welcome email sequence that fires immediately on every new signup. Delivered in 7 days."
+  },
+  {
+    "slug": "emtiyaz-education",
+    "clientName": "Emtiyaz Education",
+    "skills": "AI Education Platform, LMS, Chatbot, Course Management",
+    "techStack": "Next.js, OpenAI API, MongoDB, Node.js",
+    "description": "Built a complete AI-powered education platform with full course management, automated student enrollment, and role-based access per course. Integrated a custom AI chatbot trained on each course's content to answer student questions intelligently in real time. Students and admins can track completion status and performance through a progress tracking dashboard."
+  },
+  {
+    "slug": "real-estate-ai-video",
+    "clientName": "Real Estate AI Video",
+    "skills": "AI SaaS, Video Generation, Real Estate, Subscription Billing",
+    "techStack": "Next.js, AI Video API, Stripe, MongoDB",
+    "description": "Built an AI SaaS platform where real estate agents upload property images and the system generates professional marketing videos automatically. No editing software, designer, or manual work required. Includes a full SaaS dashboard with user management, subscription billing, and video history. Videos are ready to publish on any platform in seconds."
+  },
+  {
+    "slug": "mealspo",
+    "clientName": "Mealspo",
+    "skills": "AI Food Platform, POC, Conversational AI, Recipe Guidance",
+    "techStack": "Next.js, OpenAI API, MongoDB",
+    "description": "Built a proof-of-concept AI cooking guidance platform where users build their meal step by step and receive real-time AI assistance on ingredients, technique, timing, and plating. AI adapts its suggestions dynamically based on the specific meal being created. Delivered as a fully working POC that validated the concept as buildable and scalable."
+  },
+  {
+    "slug": "vidar-ai-trading",
+    "clientName": "VIDAR AI",
+    "skills": "AI Trading, Algorithmic Trading, MT5 Integration, Autonomous Execution",
+    "techStack": "Python, MetaTrader 5 API, AI Prediction Model",
+    "description": "Built an autonomous AI trading platform that connects to MT5, reads live market data continuously, and identifies high-probability buy and sell opportunities using a predictive AI engine. Trades are placed and managed without any human input after initial setup. Includes a performance dashboard providing full visibility into signals, accuracy, and portfolio performance."
+  },
+  {
+    "slug": "vendor-dashboard-arabic",
+    "clientName": "Vendor Dashboard",
+    "skills": "RTL Dashboard, Arabic Localization, Product Management, Custom Admin",
+    "techStack": "Next.js, MongoDB, i18n RTL, Node.js",
+    "description": "Built a fully localized vendor management dashboard natively for an Arabic-speaking market using a right-to-left layout built from scratch — not patched onto an existing system. Vendors add, edit, and manage products entirely in Arabic, with real-time order tracking and business operations including revenue reporting and analytics in a fully native Arabic interface."
+  },
+  {
+    "slug": "panorama-brand-website",
+    "clientName": "Panorama",
+    "skills": "Brand Website, 3D Web, Motion Design, Premium UI",
+    "techStack": "MERN Stack, Three.js, GSAP, MongoDB",
+    "description": "Built a premium brand website for Panorama using the MERN Stack with Three.js powering immersive 3D visuals and animations rendered entirely in the browser. Scroll-triggered animations and premium motion design command attention at every interaction. Every pixel was custom-designed to align with Panorama's high-end brand identity — no template, no theme, built from scratch."
+  },
+  {
+    "slug": "grill-gear",
+    "clientName": "Grill Gear",
+    "skills": "eCommerce, Brand Website, Product Catalog, WooCommerce",
+    "techStack": "WordPress, WooCommerce, Tailwind CSS",
+    "description": "Built a complete WooCommerce store for an outdoor grill and barbecue brand from scratch. Includes full product listings, categories, cart, and checkout, with a storefront designed to match the brand's outdoor identity. Admin panel covers product, inventory, and pricing management. Fully responsive across desktop, tablet, and mobile and built to convert from day one."
+  },
+  {
+    "slug": "tdlr-driving-school",
+    "clientName": "Coach W",
+    "skills": "EdTech, Compliance, LMS, Certificate Automation",
+    "techStack": "WordPress, LearnDash, Custom PHP, WooCommerce",
+    "description": "Rebuilt a Texas TDLR-compliant driving school platform on WordPress LearnDash that was failing compliance on multiple requirements. Enforced daily and total seat-time caps across four course types with no bypass possible, automated DE-964E and DE-964 certificate generation, built a unique serial number system with duplicate prevention, and implemented mandatory timestamped parent e-signature logic blocking certificate issuance until captured."
+  },
+  {
+    "slug": "ai-voice-agent",
+    "clientName": "AI Voice Agent",
+    "skills": "AI Voice Agent, Inbound Calling, Outbound Calling, Lead Qualification",
+    "techStack": "VAPI, Twilio, OpenAI",
+    "description": "Built a fully automated AI voice agent system handling both inbound and outbound calls 24/7 without any human involvement. The inbound agent qualifies leads and routes conversations intelligently; the outbound agent conducts automated calls with natural conversation flow and follow-up logic. Books confirmed appointments directly from the call using production-grade telephony infrastructure on VAPI and Twilio."
+  },
+  {
+    "slug": "ai-instagram-auto-reply",
+    "clientName": "AI Instagram Auto Reply",
+    "skills": "Social Media Automation, AI Engagement, Lead Capture, Instagram",
+    "techStack": "Instagram Graph API, OpenAI, Make.com",
+    "description": "Built an AI-powered Instagram auto-reply system that detects every incoming comment, determines the right response type, and generates context-aware replies matching the post content and comment intent. High-intent comments are automatically routed into a DM conversion flow. Runs entirely without manual involvement 24 hours a day, capturing engagement and leads around the clock."
+  },
+  {
+    "slug": "monday-onboarding-automation",
+    "clientName": "Monday Onboarding",
+    "skills": "CRM Automation, Client Onboarding, Email Marketing, Workflow",
+    "techStack": "Monday.com, Make.com, Email API",
+    "description": "Built a complete client onboarding and management automation system inside Monday.com. New clients automatically trigger a structured sequence of tasks and communications. Inbound leads enter automated nurture flows with zero manual input, and a central client management board provides full visibility into every client's status, tasks, and milestones."
+  },
+  {
+    "slug": "ai-blog-generator",
+    "clientName": "AI Blog Generator",
+    "skills": "AI Content Generation, Blog Automation, Image Generation, CMS",
+    "techStack": "Next.js, OpenAI API, DALL-E, MongoDB",
+    "description": "Built an AI blog generation platform that takes a single topic input and produces a complete, publish-ready article with headings, subheadings, body copy, and automatically generated and embedded images in seconds. Zero writer involvement required. Clean, formatted output is ready to paste directly into any CMS. Built as a scalable content production engine."
+  },
+  {
+    "slug": "ai-image-generator",
+    "clientName": "AI Image Generator",
+    "skills": "AI Image Generation, Text-to-Image, Creative Tool, Custom Framing",
+    "techStack": "Next.js, DALL-E, OpenAI API",
+    "description": "Built a flexible AI image generation tool powered by DALL-E that produces professional-grade visuals from natural language text prompts. Supports any aspect ratio and custom frame dimensions from square to widescreen. Users control visual style, tone, and aesthetic entirely through prompt input. High-resolution images are ready for immediate download after generation."
+  },
+  {
+    "slug": "cover-letter-generator",
+    "clientName": "Cover Letter Generator",
+    "skills": "AI Career Tool, Cover Letter, Job Application, Personalization",
+    "techStack": "Next.js, OpenAI API, PDF Export",
+    "description": "Built an AI cover letter generator that collects the user's background, experience, and target role and produces a compelling, personalized letter tailored to the specific job. Includes a smart guidance layer advising on tone, structure, and what hiring managers prioritize. Clean, formatted output is ready to send with every job application immediately."
+  },
+  {
+    "slug": "interview-notebook",
+    "clientName": "Interview Notebook",
+    "skills": "AI Career Tool, Interview Prep, Company Research, Question Prediction",
+    "techStack": "Next.js, OpenAI API, Web Search API",
+    "description": "Built an AI interview preparation tool that researches the target company's structure, culture, values, and recent news automatically, then generates role-specific preparation guidance and predicts likely interview questions. Builds a structured preparation path based on the exact position and company profile, giving candidates real readiness rather than surface-level notes."
+  },
+  {
+    "slug": "ai-interview-simulator",
+    "clientName": "AI Interview Simulator",
+    "skills": "AI Career Tool, Mock Interview, Real-time Evaluation, Feedback",
+    "techStack": "Next.js, OpenAI API, Real-time Streaming",
+    "description": "Built an AI interview simulator that conducts full mock interviews with natural conversational flow, generating niche-specific questions based on the exact role, industry, and seniority level. AI evaluates each answer in real time, flags weak areas immediately, and delivers a detailed post-session report with specific improvements per answer. Provides practice that genuinely prepares candidates."
+  },
+  {
+    "slug": "tele-wordpress-deployer",
+    "clientName": "Telegram WordPress Deployer",
+    "skills": "AI Automation, WordPress Deployment, VPS, Telegram Bot",
+    "techStack": "Telegram Bot API, WordPress, VPS Shell Scripting, n8n",
+    "description": "Built an automation where users type site requirements directly in Telegram and a complete WordPress website is generated and deployed live on a VPS automatically. No dashboard access, no code, no server management required from the user. The system processes the input, configures and deploys the site, and sends the user a live URL in Telegram — start to live in minutes."
+  },
+  {
+    "slug": "writeitaus-chrome-extension",
+    "clientName": "Write-It.us",
+    "skills": "Browser Extension, AI Writing, OAuth-free Integration, Humanizer",
+    "techStack": "Chrome Extension (MV3), AWS Lambda, OpenAI API",
+    "description": "Built a Chrome extension that reads and enhances Google Docs content without requiring OAuth permissions from users, using browser-based document scraping instead. Implements an approval-based AI writing flow where suggestions appear in a review container before being applied. Includes a built-in humanizer integration within the same approval flow, all backed by an AWS serverless backend."
+  },
+  {
+    "slug": "zoho-crm-property-pipeline",
+    "clientName": "Zoho Property Services",
+    "skills": "CRM Automation, Lead Management, Pipeline, Property Services",
+    "techStack": "Zoho CRM, Zoho Flow, Email Automation",
+    "description": "Built a fully automated lead capture and workflow pipeline inside Zoho CRM for a property services company. Every inbound lead is captured and routed automatically with correct assignment. Stage-based triggers fire tasks, follow-ups, and notifications without manual input. A pipeline dashboard provides real-time visibility into deal stages, team activity, and conversion rates."
+  },
+  {
+    "slug": "apartmentmaid-marketing-automation",
+    "clientName": "ApartmentMaid",
+    "skills": "Marketing Automation, Lifecycle Marketing, Multi-channel, Retention",
+    "techStack": "OneSignal, SMS API, WhatsApp Business API, Webhook",
+    "description": "Built a complete multi-channel lifecycle automation system covering every tenant stage from initial outreach through booking, payment, and long-term retention. Personalized SMS, email, and WhatsApp campaigns run automatically per lifecycle event. Includes checkout abandonment recovery for incomplete bookings, post-booking retention sequences, and custom event tracking for key milestones like payment complete and clean completed."
+  },
+  {
+    "slug": "ai-grant-matching-platform",
+    "clientName": "Zerodown Smart Start",
+    "skills": "AI SaaS, Grant Matching, Client Portal, LMS",
+    "techStack": "Next.js, OpenAI GPT-4, MongoDB, PDF Generation",
+    "description": "Built a full-scale AI grant matching platform in three weeks. GPT-4 scores and ranks grants using weighted eligibility logic per client profile, and a grant stacking engine identifies compatible grants for maximum combined funding. Clients access a self-serve portal for status tracking, document upload, messaging, and LMS modules. Professional grant match reports are auto-generated as PDFs and delivered automatically."
+  },
+  {
+    "slug": "anatome-lifecycle",
+    "clientName": "Anatome",
+    "skills": "eCommerce Automation, Loyalty Program, Subscription, Klaviyo",
+    "techStack": "Shopify, Klaviyo, Octane AI, Gorgias, Seal Subscriptions",
+    "description": "Integrated six isolated tools — Shopify, Klaviyo, Octane AI, Gorgias, Love Loyalty, and Seal Subscriptions — into one connected customer lifecycle engine for a premium luxury brand. Octane AI quiz data syncs into Klaviyo as custom properties, loyalty tiers and points logic were built from scratch, and subscription conversion was embedded into post-purchase flows. Live chat was activated on product and checkout pages with AI FAQ responses."
+  },
+  {
+    "slug": "filevine-khachikyan-law",
+    "clientName": "Khachikyan Law",
+    "skills": "Legal Tech, Case Management, Document Automation, Client Portal",
+    "techStack": "FileVine, Outlaw, Demands AI, Client Portal",
+    "description": "Rebuilt a California personal injury law firm's entire FileVine system — automated phase workflows now trigger task flows on every phase change across PI and Lemon Law cases. One-click document generation via Outlaw handles demand letters, retainer agreements, and settlement docs auto-populated from case data. Demands AI generates professional demand letters in minutes. A self-serve client portal gives clients 24/7 access to case status and documents. Delivered in 15 days."
+  },
+  {
+    "slug": "landbot-turbotranslate",
+    "clientName": "TurboTranslate",
+    "skills": "Chatbot, Conversion Optimization, In-chat Payments, Lead Qualification",
+    "techStack": "Landbot, Stripe, WhatsApp Business API",
+    "description": "Built a Landbot chatbot deployed across 17 translation service pages — covering 13 PPC landing pages, the homepage, checkout, and free quote pages. The bot qualifies document needs, processes payment via Stripe inside the chat, and routes urgent high-intent conversations to a live agent. Checkout abandonment recovery triggers automatically at 45 seconds on the order page."
+  },
+  {
+    "slug": "hermes-ai-agent",
+    "clientName": "Brian - Hermes AI",
+    "skills": "AI Creative Automation, Ad Production, VPS Agent, Voiceover",
+    "techStack": "Claude API, ElevenLabs, Airtable, Pexels API, VPS",
+    "description": "Deployed an autonomous AI creative agent on a VPS that produces complete ad creative from a single product entry in Airtable. Claude generates a full scene-by-scene script, ElevenLabs produces the professional voiceover automatically, and relevant b-roll footage is matched per scene from Pexels. All assets are organized in an Airtable output queue ready for review and launch — zero manual creative work required."
+  },
+  {
+    "slug": "freshsales-conversion-tracking",
+    "clientName": "Eyal Dror",
+    "skills": "Marketing Analytics, Conversion Tracking, Ad Attribution, Privacy",
+    "techStack": "FreshSales, Zapier, Google Ads API, LinkedIn Conversion API, GTM",
+    "description": "Built a privacy-compliant conversion tracking pipeline connecting FreshSales to both Google Ads and LinkedIn Ads simultaneously in real time. FreshSales form submissions trigger Zapier, which fires hashed user data to the Google Ads Conversion API and SHA-256 encrypted data to the LinkedIn Ads API in the same flow. GTM Consent Mode v2 was implemented with a data layer push for full compliance."
+  },
+  {
+    "slug": "awf-revenue-os",
+    "clientName": "Advanced Window Films",
+    "skills": "CRM, Business Intelligence, Revenue Attribution, Lead Tracking",
+    "techStack": "Airtable, Zapier, Outlook Integration",
+    "description": "Built AWF Revenue OS — a complete CRM and revenue intelligence system for a multi-location window film business. Outlook emails automatically create new lead rows in Airtable via Zapier. Every job is linked to its lead source for accurate channel ROI calculation, staff revenue splits track which team member generated each job, and a live marketing dashboard shows spend vs. revenue by channel in real time. Delivered in two days."
+  },
+  {
+    "slug": "whp-protocol",
+    "clientName": "WHP Protocol",
+    "skills": "Health Data Platform, Clinical Tracking, Biometrics, Dashboard",
+    "techStack": "Airtable, GKI Formula Engine, Framer, Oura Ring API",
+    "description": "Built a clinical-grade metabolic tracking system capturing daily biometrics, Oura Ring data, and quarterly blood panel results in a three-table relational Airtable database. Auto-calculates GKI health scores with conditional color-coded health zone indicators. Includes a frictionless mobile photo logging interface and an investor-ready executive dashboard with dual-axis HRV vs. Glucose and Insulin charting across 7, 30, and 90-day timeframes."
+  },
+  {
+    "slug": "telegram-website-creator",
+    "clientName": "Dennis",
+    "skills": "AI Automation, WordPress Deployment, Telegram Bot, Domain Provisioning",
+    "techStack": "Telegram Bot API, Namecheap API, Coolify VPS, WordPress",
+    "description": "Built a Telegram bot that fully automates WordPress website provisioning for agency clients. The bot collects all site requirements through structured guided chat, purchases and configures the domain via Namecheap API, duplicates a WordPress template on a Coolify VPS, and applies client branding automatically. The user receives a live URL, login credentials, and email account details directly in Telegram — all in under 10 minutes."
+  },
+  {
+    "slug": "student-career-platform",
+    "clientName": "Ali - Ali and Partners",
+    "skills": "EdTech, Career Platform, Real-time Community, Job Board",
+    "techStack": "MERN Stack, Socket.io, OpenAI API, MongoDB",
+    "description": "Built a comprehensive student career platform covering five features in five weeks: an AI CV review powered by OpenAI, an admin-managed job board for internships and full-time roles, a real-time community with Socket.io forum threads and private messaging, a kanban-style application tracker with color-coded status and deadlines, and verified student profiles with role-based access."
+  },
+  {
+    "slug": "github-city-scraper-codepark",
+    "clientName": "CodePark",
+    "skills": "Data Engineering, Web Scraping, Developer Datasets, LinkedIn Matching",
+    "techStack": "Python, GitHub API, PostgreSQL, Google Search API",
+    "description": "Built a fault-tolerant GitHub developer scraper that bypasses GitHub's hard 1,000-result search cap by subdividing queries across repository count ranges and creation date windows. Extracts 100% of developers in any given city, matches profiles to LinkedIn using name and keyword-based Google search scoring, auto-resumes on crash from exact stopping point, and enforces zero duplicate records across all runs."
+  },
+  {
+    "slug": "ai-foreclosure-system",
+    "clientName": "Luc Manigat",
+    "skills": "Real Estate Automation, Lead Pipeline, Skip Tracing, AI Outreach",
+    "techStack": "n8n, GoHighLevel, PropStream, REISkip, Looker Studio",
+    "description": "Built a fully automated foreclosure lead pipeline connecting PropStream, n8n, REISkip, and GoHighLevel. Real-time webhooks capture every new pre-foreclosure lead from PropStream, n8n forwards each lead to REISkip for instant skip tracing returning phone numbers and emails, and enriched leads trigger automated SMS, email, and AI conversation sequences in GoHighLevel. A Looker Studio dashboard provides full pipeline visibility from lead count to appointments booked."
+  },
+  {
+    "slug": "human-attention-verification",
+    "clientName": "Olha",
+    "skills": "Browser Technology, Face Detection, GDPR Compliance, WooCommerce",
+    "techStack": "MediaPipe, Firebase Firestore, JavaScript, WooCommerce",
+    "description": "Built a fully browser-based human attention verification system using MediaPipe face detection that tracks face visibility, head pose, and tab focus in real time with zero server-side processing. The attention timer pauses instantly when the user switches tabs or minimizes. Every attention event is logged securely to Firebase Firestore with strict write rules. Verified completion automatically unlocks a WooCommerce discount or premium content reward."
+  },
+  {
+    "slug": "chelan-parasail",
+    "clientName": "Chelan Parasail",
+    "skills": "Brand Website, Online Booking, Watersports, Mobile Optimization",
+    "techStack": "WordPress, WooCommerce, Tailwind CSS",
+    "description": "Built a brand website for Washington State's only parasail operator — a business with over 30 years of legacy. Includes a clear booking flow for parasail rides, jet ski rentals, and boat rentals with availability and pricing, a mobile-first responsive design for visitors arriving from social and search, and a strong service hierarchy with differentiated offerings and calls to action."
+  },
+  {
+    "slug": "hubspot-pipeline",
+    "clientName": "",
+    "skills": "CRM, Sales Automation, Pipeline Management, HubSpot",
+    "techStack": "HubSpot, HubSpot Workflows, Email Automation",
+    "description": "Built a structured HubSpot sales automation system that eliminates all manual deal management. Customer actions automatically create deals, route them to the correct pipeline and stage, assign the right owner, and trigger follow-up tasks and emails. Every stage change fires the next workflow, keeping all opportunities moving through the funnel without relying on sales reps to manually advance them."
+  },
+  {
+    "slug": "Hubspot_Agentic",
+    "clientName": "Tiffany Makeever",
+    "skills": "Agentic AI, MCP Integration, Multi-tool Automation, AI Infrastructure",
+    "techStack": "Claude (Anthropic), MCP, Ubuntu VPS, HubSpot, Asana, Google Drive",
+    "description": "Deployed a fully agentic Claude workspace on a hardened Ubuntu VPS connected to HubSpot, Asana, Google Drive, Slack, and Gmail through MCP integrations. Claude runs 24/7 via tmux with auto-restart on crash, executing 12 real agency automations against live client accounts — including CRM updates, client report generation, deal stage progressions, Slack notifications, Gmail draft creation, and multi-step cross-tool workflows, all built to Tiffany's agency playbook."
+  },
+  {
+    "slug": "Shopify-Website",
+    "clientName": "Relentless Labz",
+    "skills": "eCommerce, Shopify, Product Catalog, Brand Design",
+    "techStack": "Shopify, Shopify Liquid, Custom Theme",
+    "description": "Built a modern Shopify e-commerce store for a performance supplement brand offering pre-workouts, energy drinks, fat burners, hydration products, and more. Organized product collections with clear category structure, featured product sections, sample packs, and discovery flows to help customers find products quickly. Dedicated product pages, full cart and checkout, and brand content sections communicate quality, trusted formulas, and fast shipping."
+  },
+  {
+    "slug": "GHL-Work",
+    "clientName": "Dermot - Advanced Window Films",
+    "skills": "CRM Setup, WhatsApp Automation, Lead Management, Meta Ads",
+    "techStack": "GoHighLevel, Meta Ads API, WhatsApp Business API, Tradify",
+    "description": "Built a full GoHighLevel CRM system for a window film installation business with dual pipelines tracking Meta leads and website enquiries separately. Connected Facebook ad forms, imported 233 existing leads with zero duplicates, and built a 3-message automated WhatsApp welcome sequence firing on every new lead. Configured 10 Meta-approved WhatsApp templates, 6 live automations including staff alerts and idle reminders, a dedicated email domain, and a live revenue dashboard showing pipeline value and stage conversion across both channels."
+  }
+]

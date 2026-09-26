@@ -825,7 +825,7 @@ export default function AdminForm({ mode = 'create', caseStudyId, initialData })
           GOOGLE_SHEET_WEBHOOK_URL.
         </p>
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field label="Client Name">
+          <Field label="Client Name/Company Name">
             <input
               value={form.sheetData.clientName}
               onChange={(e) => update('sheetData', { clientName: e.target.value })}
