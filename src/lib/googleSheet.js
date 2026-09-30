@@ -31,17 +31,19 @@ export async function sendToGoogleSheet(sheetData, slug) {
   }
 
   const values = normalizeSheetData(sheetData)
+  const normalizedSlug = String(slug ?? '').trim()
 
   try {
     const res = await fetch(webhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        slug: String(slug ?? '').trim(),
+        slug: normalizedSlug,
         clientName: values.clientName,
         skills: values.skills,
         techStack: values.techStack,
         description: values.description,
+        link: `https://portfolio.mudassircodes.com/case-study/${normalizedSlug}`,
       }),
       signal: AbortSignal.timeout(WEBHOOK_TIMEOUT_MS),
     })
