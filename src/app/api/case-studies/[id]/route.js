@@ -3,8 +3,10 @@ import { NextResponse } from 'next/server'
 import dbConnect from '@/lib/dbConnect'
 import CaseStudy from '@/models/CaseStudy'
 import {
-  requireAdmin,
+  getAdminSession,
+  permissionsFor,
   unauthorizedResponse,
+  forbiddenResponse,
   errorResponse,
 } from '@/lib/auth'
 import { sheetDataChanged, sendToGoogleSheet } from '@/lib/googleSheet'
@@ -26,7 +28,7 @@ function serialize(caseStudy) {
 }
 
 export async function GET(_request, { params }) {
-  if (!(await requireAdmin())) {
+  if (!(await getAdminSession())) {
     return unauthorizedResponse()
   }
 
@@ -45,8 +47,12 @@ export async function GET(_request, { params }) {
 }
 
 export async function PUT(request, { params }) {
-  if (!(await requireAdmin())) {
+  const session = await getAdminSession()
+  if (!session) {
     return unauthorizedResponse()
+  }
+  if (!permissionsFor(session.role).canEdit) {
+    return forbiddenResponse()
   }
 
   const { id } = await params
@@ -108,8 +114,12 @@ export async function PUT(request, { params }) {
 }
 
 export async function DELETE(_request, { params }) {
-  if (!(await requireAdmin())) {
+  const session = await getAdminSession()
+  if (!session) {
     return unauthorizedResponse()
+  }
+  if (!permissionsFor(session.role).canDelete) {
+    return forbiddenResponse()
   }
 
   const { id } = await params
