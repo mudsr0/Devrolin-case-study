@@ -23,7 +23,7 @@
     /* primary text */
     --color-admin-muted: #9ca3af;
     /* secondary text */
-    --color-admin-accent: #ff7425;
+    --color-admin-accent: #38BDF8;
     /* buttons, active states, focus rings */
     --color-admin-border: #1f1f1f;
     /* borders, dividers */
@@ -89,20 +89,20 @@ body {
     border-color: var(--lp-accent-line);
 }
 
-/* ── Cold Outreach theme (orange) ── */
+/* ── Cold Outreach theme (light blue) ── */
 .case-study.cold-theme {
     --surface: #0e0e0e;
     /* Admin bg2 */
     --card: #0e0e0e;
     --border: #1F1F1F;
     --border-strong: #333333;
-    --green: #ff7425;
-    /* Admin/Landing accent orange */
-    --green-dim: rgba(255, 116, 37, .14);
-    --green-border: rgba(255, 116, 37, .3);
-    --green-glow: rgba(255, 116, 37, .45);
-    --cyan: #ff7425;
-    /* Ensure cyan elements also use orange for consistency */
+    --green: #38BDF8;
+    /* Admin/Landing accent light blue */
+    --green-dim: rgba(56, 189, 248, .14);
+    --green-border: rgba(56, 189, 248, .3);
+    --green-glow: rgba(56, 189, 248, .5);
+    --cyan: #38BDF8;
+    /* Ensure cyan elements also use light blue for consistency */
     --navy: #0e0e0e;
     --text: #FFFFFF;
     --text-2: #9CA3AF;
@@ -110,7 +110,7 @@ body {
     --text-3: #666666;
     --red: #E5392A;
     --tp: #00B67A;
-    --lp-accent-line: #ff7425;
+    --lp-accent-line: #38BDF8;
     background:
         radial-gradient(600px circle at 50% 0%, color-mix(in srgb, var(--green) 14%, transparent), transparent 70%),
         radial-gradient(600px circle at 50% 100%, color-mix(in srgb, var(--green) 14%, transparent), transparent 70%);
@@ -201,7 +201,7 @@ body {
     transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
 }
 
-/* Add a subtle accent line on the left that matches the theme (green for upwork, orange for cold) */
+/* Add a subtle accent line on the left that matches the theme (green for upwork, light blue for cold) */
 .case-study .builder-card::before {
     content: '';
     position: absolute;
@@ -1246,6 +1246,11 @@ body {
     transform: translateY(-1px);
 }
 
+/* Light blue accent fill needs dark text for contrast (upwork green keeps white) */
+.case-study.cold-theme .cs-upwork-btn {
+    color: #04121C;
+}
+
 /* ── Footer ── */
 .case-study .cs-footer {
     margin-top: 80px;
@@ -1698,10 +1703,10 @@ body {
    Premium minimal single-page site with Formspree contact form
 ════════════════════════════════════════════════════════════ */
 .landing {
-    --lp-accent: #ff7425;
-    --lp-accent-soft: rgba(255, 116, 37, 0.16);
-    --lp-accent-line: rgba(255, 116, 37, 0.38);
-    --lp-accent-glow: rgba(255, 116, 37, 0.22);
+    --lp-accent: #38BDF8;
+    --lp-accent-soft: rgba(56, 189, 248, 0.16);
+    --lp-accent-line: rgba(56, 189, 248, 0.38);
+    --lp-accent-glow: rgba(56, 189, 248, .5);
     --lp-text: #FFFFFF;
     --lp-muted: #9CA3AF;
     --lp-card: #0e0e0e;
@@ -1712,8 +1717,8 @@ body {
     color: var(--lp-text);
     font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
     background:
-        radial-gradient(700px circle at 82% 12%, rgba(255, 116, 37, 0.08), transparent 65%),
-        radial-gradient(700px circle at 8% 92%, rgba(255, 116, 37, 0.05), transparent 65%),
+        radial-gradient(700px circle at 82% 12%, rgba(56, 189, 248, 0.08), transparent 65%),
+        radial-gradient(700px circle at 8% 92%, rgba(56, 189, 248, 0.05), transparent 65%),
         #000000;
 }
 
@@ -1871,21 +1876,21 @@ body {
     padding: 16px 28px;
     border: none;
     border-radius: 999px;
-    background: linear-gradient(135deg, #FF8A4D 0%, #ff7425 55%, #E85F12 100%);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #7DD3FC 0%, #38BDF8 55%, #0EA5E9 100%);
+    color: #04121C;
     font-family: inherit;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.01em;
     cursor: pointer;
-    box-shadow: 0 8px 24px rgba(255, 116, 37, 0.25);
+    box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .landing-submit:hover {
     filter: brightness(1.06);
     transform: translateY(-1px);
-    box-shadow: 0 10px 30px rgba(255, 116, 37, 0.35);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.35);
 }
 
 .landing-submit:active {
@@ -1925,8 +1930,8 @@ body {
     border: 1px solid var(--lp-accent-line);
     background: linear-gradient(160deg, #0e0e0e 0%, #050505 100%);
     box-shadow:
-        0 0 0 6px rgba(255, 116, 37, 0.06),
-        0 0 60px rgba(255, 116, 37, 0.18),
+        0 0 0 6px rgba(56, 189, 248, 0.06),
+        0 0 60px rgba(56, 189, 248, 0.18),
         0 24px 60px rgba(0, 0, 0, 0.6);
 }
 
@@ -2082,7 +2087,7 @@ body {
 .service-card:hover {
     border-color: var(--lp-accent);
     transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 30px rgba(255, 116, 37, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 30px rgba(56, 189, 248, 0.08);
 }
 
 .service-icon {
@@ -2568,13 +2573,18 @@ body {
 }
 
 .case-study .cx-call {
-    background: linear-gradient(135deg, #ff8a4d, var(--green) 60%, #e85f12);
-    box-shadow: 0 10px 28px rgba(255, 116, 37, .28);
+    background: linear-gradient(135deg, #7DD3FC, var(--green) 60%, #0EA5E9);
+    box-shadow: 0 10px 28px rgba(56, 189, 248, .28);
 }
 
 .case-study .upwork-theme .cx-call {
     background: linear-gradient(135deg, #14b814, var(--green));
     box-shadow: 0 10px 28px rgba(0, 160, 0, .28);
+}
+
+/* Light blue accent fills need dark text for contrast (upwork green keeps white) */
+.case-study.cold-theme .cx-call {
+    color: #04121C;
 }
 
 .case-study .cx-wa {
