@@ -28,29 +28,37 @@ function CategoryBadge({ category }) {
   )
 }
 
-function RowActions({ caseStudy, deletingId, onDelete, linkPath }) {
+function RowActions({ caseStudy, deletingId, onDelete, linkPath, canEdit, canDelete }) {
   return (
     <div className={rowActionsClass}>
-      <Link
-        href={`/admin/edit/${caseStudy._id}`}
-        className="rounded-md border border-admin-border bg-admin-bg2 px-3 py-1.5 text-xs font-medium text-admin-text transition-colors hover:border-admin-accent hover:text-admin-accent"
-      >
-        Edit
-      </Link>
+      {canEdit ? (
+        <Link
+          href={`/admin/edit/${caseStudy._id}`}
+          className="rounded-md border border-admin-border bg-admin-bg2 px-3 py-1.5 text-xs font-medium text-admin-text transition-colors hover:border-admin-accent hover:text-admin-accent"
+        >
+          Edit
+        </Link>
+      ) : null}
       <CopyLinkButton slug={caseStudy.slug} path={linkPath} />
-      <button
-        type="button"
-        disabled={deletingId === caseStudy._id}
-        onClick={() => onDelete(caseStudy)}
-        className="rounded-md border border-admin-border px-3 py-1.5 text-xs font-medium text-admin-danger transition-colors hover:border-admin-danger/60 hover:bg-admin-danger/10 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        {deletingId === caseStudy._id ? 'Deleting…' : 'Delete'}
-      </button>
+      {canDelete ? (
+        <button
+          type="button"
+          disabled={deletingId === caseStudy._id}
+          onClick={() => onDelete(caseStudy)}
+          className="rounded-md border border-admin-border px-3 py-1.5 text-xs font-medium text-admin-danger transition-colors hover:border-admin-danger/60 hover:bg-admin-danger/10 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {deletingId === caseStudy._id ? 'Deleting…' : 'Delete'}
+        </button>
+      ) : null}
     </div>
   )
 }
 
-export default function CaseStudiesTable({ caseStudies }) {
+export default function CaseStudiesTable({
+  caseStudies,
+  canEdit = true,
+  canDelete = true,
+}) {
   const router = useRouter()
   const [searchInput, setSearchInput] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
@@ -118,6 +126,11 @@ export default function CaseStudiesTable({ caseStudies }) {
 
       if (res.status === 401) {
         router.push('/admin/login')
+        return
+      }
+
+      if (res.status === 403) {
+        setError('You do not have permission to delete case studies.')
         return
       }
 
@@ -269,6 +282,8 @@ export default function CaseStudiesTable({ caseStudies }) {
                           deletingId={deletingId}
                           onDelete={handleDelete}
                           linkPath={linkPath}
+                          canEdit={canEdit}
+                          canDelete={canDelete}
                         />
                       </div>
                     </td>
@@ -303,6 +318,8 @@ export default function CaseStudiesTable({ caseStudies }) {
                     deletingId={deletingId}
                     onDelete={handleDelete}
                     linkPath={linkPath}
+                    canEdit={canEdit}
+                    canDelete={canDelete}
                   />
                 </div>
               </article>

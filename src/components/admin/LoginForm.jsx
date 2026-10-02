@@ -2,11 +2,12 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { normalizeRole, resolvePostLoginPath } from '@/lib/roles'
 
 const inputClass =
   'w-full rounded-md border border-admin-border bg-admin-bg2 px-3.5 py-2.5 text-sm text-admin-text placeholder-admin-muted outline-none transition-colors focus:border-admin-accent focus:ring-2 focus:ring-admin-accent/25'
 
-export default function LoginForm({ redirectTo = '/admin/dashboard' }) {
+export default function LoginForm({ redirectTo }) {
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -39,7 +40,19 @@ export default function LoginForm({ redirectTo = '/admin/dashboard' }) {
         return
       }
 
-      router.push(redirectTo)
+      // Land each role on its own dashboard. `redirectTo` (from ?from=) wins
+      // when the signed-in role is actually allowed to reach it.
+      let role = null
+      try {
+        const body = await res.json()
+        if (body && typeof body.role === 'string') {
+          role = body.role
+        }
+      } catch {
+        // fall back to the role default below
+      }
+
+      router.push(resolvePostLoginPath(normalizeRole(role), redirectTo))
       router.refresh()
     } catch {
       setError('Something went wrong. Please try again.')

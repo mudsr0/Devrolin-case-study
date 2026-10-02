@@ -2,15 +2,18 @@ import mongoose from 'mongoose'
 import { redirect, notFound } from 'next/navigation'
 import dbConnect from '@/lib/dbConnect'
 import CaseStudy from '@/models/CaseStudy'
-import { requireAdmin } from '@/lib/auth'
+import { getAdminSession, permissionsFor } from '@/lib/auth'
 import AdminForm from '@/components/admin/AdminForm'
 
 export const dynamic = 'force-dynamic'
 
 export default async function EditCaseStudyPage({ params }) {
-  const session = await requireAdmin()
+  const session = await getAdminSession()
   if (!session) {
     redirect('/admin/login')
+  }
+  if (!permissionsFor(session.role).canEdit) {
+    redirect('/admin/dashboard')
   }
 
   const { id } = await params

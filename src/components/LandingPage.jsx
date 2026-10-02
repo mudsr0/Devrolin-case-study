@@ -169,7 +169,7 @@ export default function LandingPage() {
                   <div className="landing-avatar landing-avatar--fallback">MH</div>
                 ) : (
                   <Image
-                    src="/images/mudassir.png"
+                    src="/images/mudassir-blue.png"
                     alt="Mudassir H."
                     width={56}
                     height={56}
@@ -270,7 +270,7 @@ export default function LandingPage() {
                   </div>
                 ) : (
                   <Image
-                    src="/images/mudassir.png"
+                    src="/images/mudassir-blue.png"
                     alt="Mudassir H. — CRM Automation Expert"
                     fill
                     sizes="(max-width: 1023px) 100vw, 46vw"
@@ -315,12 +315,12 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-fade>
             {SERVICES.map((service) => (
               <div
-                className="bg-[#0e0e0e] border border-[#1F1F1F] rounded-xl p-6 transition-all duration-300 hover:border-[#ff7425] hover:shadow-[0_0_20px_rgba(255,116,37,0.15)]"
+                className="bg-[#0e0e0e] border border-[#1F1F1F] rounded-xl p-6 transition-all duration-300 hover:border-[#38BDF8] hover:shadow-[0_0_20px_rgba(56,189,248,0.15)]"
                 key={service.title}
               >
-                <div className="text-3xl text-[#ff7425] mb-4" aria-hidden="true">{service.icon}</div>
+                <div className="text-3xl text-[#38BDF8] mb-4" aria-hidden="true">{service.icon}</div>
                 <h3 className="font-bold text-white text-lg">{service.title}</h3>
-                <p className="font-normal text-[#ff7425] text-sm">{service.subtitle}</p>
+                <p className="font-normal text-[#38BDF8] text-sm">{service.subtitle}</p>
                 <p className="mt-2 text-sm text-[#9CA3AF] leading-relaxed">{service.desc}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {service.stack.map((tag) => (
@@ -399,7 +399,7 @@ export default function LandingPage() {
             <h2 className="section-title">Show me the bottleneck.</h2>
             <p className="section-sub">
               You don&apos;t need to know whether the answer is AI, automation, CRM, Python,
-              or a custom platform.  <strong className="text-[#ff7425]"> Just tell me what&apos;s not working the way it should. </strong>  I&apos;ll look at the
+              or a custom platform.  <strong className="text-[#38BDF8]"> Just tell me what&apos;s not working the way it should. </strong>  I&apos;ll look at the
               problem and tell you where I&apos;d start.
             </p>
             <a className="landing-submit landing-submit--link" href="#lp-form">

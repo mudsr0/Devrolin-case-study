@@ -2,8 +2,10 @@ import { NextResponse } from 'next/server'
 import dbConnect from '@/lib/dbConnect'
 import CaseStudy from '@/models/CaseStudy'
 import {
-  requireAdmin,
+  getAdminSession,
+  permissionsFor,
   unauthorizedResponse,
+  forbiddenResponse,
   errorResponse,
 } from '@/lib/auth'
 import { sendToGoogleSheet } from '@/lib/googleSheet'
@@ -25,7 +27,7 @@ function serialize(caseStudy) {
 }
 
 export async function GET() {
-  if (!(await requireAdmin())) {
+  if (!(await getAdminSession())) {
     return unauthorizedResponse()
   }
 
@@ -38,8 +40,12 @@ export async function GET() {
 }
 
 export async function POST(request) {
-  if (!(await requireAdmin())) {
+  const session = await getAdminSession()
+  if (!session) {
     return unauthorizedResponse()
+  }
+  if (!permissionsFor(session.role).canCreate) {
+    return forbiddenResponse()
   }
 
   let body
