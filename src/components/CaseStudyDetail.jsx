@@ -22,6 +22,35 @@ const scrollToVideo = (e) => {
   }
 }
 
+const scrollToRiskReversal = (e) => {
+  e.preventDefault()
+  const isMobile = window.innerWidth <= 600
+
+  if (isMobile) {
+    // Mobile: stop at the flags div with -60 offset
+    const target = document.querySelector('.rr-flags')
+    if (target) {
+      const offset = -80
+      if (window.lenis) {
+        window.lenis.scrollTo(target, { offset: offset })
+      } else {
+        const topPos = target.getBoundingClientRect().top + window.scrollY + offset
+        window.scrollTo({ top: topPos, behavior: 'smooth' })
+      }
+    }
+  } else {
+    // Desktop: stop at the main risk section with 10 offset
+    const target = document.getElementById('risk-section')
+    if (target) {
+      if (window.lenis) {
+        window.lenis.scrollTo(target, { offset: 10 })
+      } else {
+        target.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+}
+
 function RichText({ html, className }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: html }} />
 }
@@ -161,6 +190,11 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
               </svg>
               Hire me on Upwork
             </a>
+          )}
+          {audience === 'cold' && (
+            <button onClick={scrollToRiskReversal} className="cs-upwork-btn cs-results-btn">
+              See Client Results
+            </button>
           )}
         </div>
       </header>
@@ -316,8 +350,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           </section>
         )}
 
-        {/* ── Risk Reversal ── */}
-        <section className="rr-section" data-fade>
+        {/* ── 8. Risk Reversal ── */}
+        <section className="rr-section" data-fade id="risk-section">
           <div className="rr-eyebrow">{riskData.eyebrow}</div>
 
           <div className="rr-grid">
@@ -388,7 +422,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           )}
         </section>
 
-        {/* ── Multi-Option CTA ── */}
+        {/* ── 10. Multi-Option CTA ── */}
         <section className="cx-section" data-fade>
           <div className="cx-divider" />
           <div className="cx-grid">
