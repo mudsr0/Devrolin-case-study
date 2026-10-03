@@ -169,7 +169,7 @@ export default function LandingPage() {
                   <div className="landing-avatar landing-avatar--fallback">MH</div>
                 ) : (
                   <Image
-                    src="/images/mudassir-blue.png"
+                    src="/images/mudassir-blue.jpeg"
                     alt="Mudassir H."
                     width={56}
                     height={56}
@@ -270,7 +270,7 @@ export default function LandingPage() {
                   </div>
                 ) : (
                   <Image
-                    src="/images/mudassir-blue.png"
+                    src="/images/mudassir-blue.jpeg"
                     alt="Mudassir H. — CRM Automation Expert"
                     fill
                     sizes="(max-width: 1023px) 100vw, 46vw"
