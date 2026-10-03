@@ -193,7 +193,8 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           )}
           {audience === 'cold' && (
             <button onClick={scrollToRiskReversal} className="cs-upwork-btn cs-results-btn">
-              See Client Results
+              <span className="btn-text-desktop">▶ See What the Client Had to Say</span>
+              <span className="btn-text-mobile">See Client Proof</span>
             </button>
           )}
         </div>
@@ -206,7 +207,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           <div className="builder-card" data-fade>
             <div className="builder-avatar">
               <img
-                src={audience === 'upwork' ? '/images/mudassir-green.jpeg' : '/images/mudassir-blue.png'}
+                src={audience === 'upwork' ? '/images/mudassir-green.jpeg' : '/images/mudassir-blue.jpeg'}
                 alt={builder.name}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
               />
@@ -219,7 +220,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                 {builder.note}
               </p>
               <button onClick={scrollToVideo} className="watch-demo-btn">
-                Watch the live demo
+                Explore live demo
                 <span className="arrow-wrap">
                   <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
                 </span>
