@@ -1262,6 +1262,13 @@ body {
     transform: translateY(-1px);
 }
 
+.case-study .cs-results-btn .btn-text-mobile { display: none; }
+
+@media (max-width: 600px) {
+  .case-study .cs-results-btn .btn-text-desktop { display: none; }
+  .case-study .cs-results-btn .btn-text-mobile { display: inline; }
+}
+
 /* ── Footer ── */
 .case-study .cs-footer {
     margin-top: 80px;
@@ -1395,11 +1402,11 @@ body {
     border-radius: 50%;
     background: #25D366;
     z-index: -1;
-    animation: cs-whatsapp-ripple 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation: cs-whatsapp-ripple 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 .case-study .cs-whatsapp::after {
-    animation-delay: 0.5s;
+    animation-delay: 2.75s;
 }
 
 @keyframes cs-whatsapp-ripple {
