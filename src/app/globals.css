@@ -1446,6 +1446,92 @@ body {
     }
 }
 
+/* ── Upwork Variant Floating Buttons ── */
+.case-study .cs-upwork-floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-study .cs-upwork-float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.case-study .cs-upwork-label {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.case-study .cs-upwork-float-btn:hover .cs-upwork-label {
+  opacity: 1;
+}
+
+.case-study .cs-upwork-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.case-study .cs-upwork-float-btn:hover .cs-upwork-icon {
+  transform: scale(1.05);
+}
+
+/* Blue circle for Client Review */
+.case-study .cs-icon-review {
+  background: #007BFF; 
+}
+
+/* Green circle for Upwork */
+.case-study .cs-icon-upwork {
+  background: #00A000;
+}
+
+/* Hide on very small screens to avoid blocking content */
+@media (max-width: 480px) {
+  .case-study .cs-upwork-floating {
+    bottom: 16px;
+    right: 16px;
+    gap: 8px;
+  }
+  
+  .case-study .cs-upwork-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .case-study .cs-upwork-label {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
 /* ── Partners Section ── */
 .case-study .partners-section {
     position: relative;
