@@ -26,13 +26,17 @@ function serialize(caseStudy) {
 }
 
 /**
- * Dashboard UI shared by /admin/dashboard and /sales/dashboard.
+ * Dashboard UI shared by /admin/dashboard, /admin/upwork/dashboard and
+ * /sales/dashboard.
  *
  * Create, Edit and Delete render only for the admin role; Copy Link is
  * available to everyone. The role passed in is the view to render, which is
  * why an admin visiting /sales/dashboard sees the read-only sales view.
+ *
+ * `linkMode` selects which public URL the Copy Link button generates:
+ * 'cold' (default) for /case-study/:slug, 'upwork' for /upwork/case-study/:slug.
  */
-export default async function DashboardView({ role }) {
+export default async function DashboardView({ role, linkMode = 'cold' }) {
   const permissions = permissionsFor(role)
   const canManage = permissions.canCreate
 
@@ -66,6 +70,7 @@ export default async function DashboardView({ role }) {
           caseStudies={caseStudies.map(serialize)}
           canEdit={permissions.canEdit}
           canDelete={permissions.canDelete}
+          linkMode={linkMode}
         />
       </div>
     </>

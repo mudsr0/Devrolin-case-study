@@ -2,9 +2,10 @@
 
 import { useRef, useState } from 'react'
 
-export default function CopyLinkButton({ slug, path = 'upwork' }) {
+export default function CopyLinkButton({ slug, linkMode = 'cold' }) {
   const [copied, setCopied] = useState(false)
   const timerRef = useRef(null)
+  const path = linkMode === 'upwork' ? 'upwork/case-study' : 'case-study'
 
   function copyLink() {
     const url = `${window.location.origin}/${path}/${slug}`
@@ -47,7 +48,7 @@ export default function CopyLinkButton({ slug, path = 'upwork' }) {
         type="button"
         onClick={copyLink}
         className="rounded-md border border-admin-border bg-admin-bg2 px-3 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:border-admin-accent hover:text-admin-accent"
-        title={`Copy ${path === 'case-study' ? 'cold outreach' : 'Upwork'} link to ${slug}`}
+        title={`Copy ${linkMode === 'upwork' ? 'Upwork' : 'cold outreach'} link to ${slug}`}
       >
         Copy Link
       </button>

@@ -3,7 +3,12 @@ import jwt from 'jsonwebtoken'
 
 const TOKEN_COOKIE = 'admin_token'
 const SALES_ROLE = 'sales'
-const ADMIN_ONLY_PREFIXES = ['/admin/new', '/admin/edit', '/admin/dashboard']
+const ADMIN_ONLY_PREFIXES = [
+  '/admin/new',
+  '/admin/edit',
+  '/admin/dashboard',
+  '/admin/upwork',
+]
 const WRITE_METHODS = new Set(['POST', 'PUT', 'PATCH', 'DELETE'])
 
 // Role data is intentionally duplicated rather than imported from

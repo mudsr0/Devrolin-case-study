@@ -46,6 +46,7 @@ export const ADMIN_ONLY_PREFIXES = [
   '/admin/new',
   '/admin/edit',
   '/admin/dashboard',
+  '/admin/upwork',
 ]
 
 /** Internal areas a logged-in user may be sent back to after signing in. */
