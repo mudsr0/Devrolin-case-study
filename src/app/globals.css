@@ -1446,6 +1446,231 @@ body {
     }
 }
 
+/* ── Upwork Variant Floating Buttons ── */
+.case-study .cs-upwork-floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-study .cs-upwork-float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.case-study .cs-upwork-label {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Make the Upwork button tooltip hidden by default */
+.case-study .cs-float-upwork .cs-upwork-label {
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show tooltip on hover */
+.case-study .cs-float-upwork:hover .cs-upwork-label {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.case-study .cs-upwork-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.case-study .cs-upwork-float-btn:hover .cs-upwork-icon {
+  transform: scale(1.05);
+}
+
+/* Blue circle for Client Review */
+.case-study .cs-icon-review {
+  background: #007BFF; 
+}
+
+/* Green circle for Upwork */
+.case-study .cs-icon-upwork {
+  background: #00A000;
+}
+
+/* Hide on very small screens to avoid blocking content */
+@media (max-width: 480px) {
+  .case-study .cs-upwork-floating {
+    bottom: 16px;
+    right: 16px;
+    gap: 8px;
+  }
+  
+  .case-study .cs-upwork-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .case-study .cs-upwork-label {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+/* ── Upwork "Next Step" CTA ── */
+.case-study .cta-next-step-section {
+  margin: 60px 0 80px;
+  padding: 0 20px;
+}
+
+.case-study .cta-next-step-card {
+  background: linear-gradient(135deg, #141414 0%, #0f0f0f 100%);
+  border: 1px solid #232323;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.case-study .cta-next-step-header {
+  margin-bottom: 40px;
+}
+
+.case-study .cta-next-step-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--green);
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.case-study .cta-next-step-title {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.case-study .cta-next-step-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.case-study .cta-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 220px;
+}
+
+.case-study .cta-step-num {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.case-study .cta-step-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.case-study .cta-step-arrow {
+  font-size: 20px;
+  color: var(--text-3);
+}
+
+.case-study .cta-next-step-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.case-study .cta-upwork-main-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  box-shadow: 0 0 0 0 rgba(0, 160, 0, 0);
+  animation: cs-glow-pulse 3s ease-in-out infinite;
+}
+
+.case-study .cta-upwork-main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.case-study .cta-upwork-note {
+  font-size: 13px;
+  color: var(--text-3);
+  max-width: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case-study .cta-next-step-card {
+    padding: 32px 20px;
+  }
+  .case-study .cta-next-step-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .case-study .cta-step-item {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+  .case-study .cta-step-arrow {
+    transform: rotate(90deg);
+  }
+}
+
 /* ── Partners Section ── */
 .case-study .partners-section {
     position: relative;
