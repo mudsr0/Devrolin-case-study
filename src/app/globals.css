@@ -1470,17 +1470,20 @@ body {
 }
 
 .case-study .cs-upwork-label {
-  background: #1A1A1A;
+  background: var(--surface);
   color: #FFFFFF;
   padding: 8px 14px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-strong);
   white-space: nowrap;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* Make the Upwork button tooltip hidden by default */
@@ -1512,11 +1515,9 @@ body {
   position: relative;
 }
 
-/* Ripple effect for floating Upwork/Review buttons */
+/* Ripple effect for floating Review button only */
 .case-study .cs-icon-review::before,
-.case-study .cs-icon-review::after,
-.case-study .cs-icon-upwork::before,
-.case-study .cs-icon-upwork::after {
+.case-study .cs-icon-review::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1530,8 +1531,6 @@ body {
 
 .case-study .cs-icon-review::before { background: #007BFF; }
 .case-study .cs-icon-review::after { background: #007BFF; animation-delay: 1.75s; }
-.case-study .cs-icon-upwork::before { background: #00A000; }
-.case-study .cs-icon-upwork::after { background: #00A000; animation-delay: 1.75s; }
 
 @keyframes cs-float-ripple {
   0% { transform: scale(1); opacity: 0.6; }
