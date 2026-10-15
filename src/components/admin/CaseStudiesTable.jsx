@@ -28,7 +28,7 @@ function CategoryBadge({ category }) {
   )
 }
 
-function RowActions({ caseStudy, deletingId, onDelete, linkPath, canEdit, canDelete }) {
+function RowActions({ caseStudy, deletingId, onDelete, linkMode, canEdit, canDelete }) {
   return (
     <div className={rowActionsClass}>
       {canEdit ? (
@@ -39,7 +39,7 @@ function RowActions({ caseStudy, deletingId, onDelete, linkPath, canEdit, canDel
           Edit
         </Link>
       ) : null}
-      <CopyLinkButton slug={caseStudy.slug} path={linkPath} />
+      <CopyLinkButton slug={caseStudy.slug} linkMode={linkMode} />
       {canDelete ? (
         <button
           type="button"
@@ -58,12 +58,12 @@ export default function CaseStudiesTable({
   caseStudies,
   canEdit = true,
   canDelete = true,
+  linkMode = 'cold',
 }) {
   const router = useRouter()
   const [searchInput, setSearchInput] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [category, setCategory] = useState('All')
-  const [linkMode, setLinkMode] = useState('outreach')
   const [deletingId, setDeletingId] = useState(null)
   const [error, setError] = useState('')
   const linkPath = linkMode === 'upwork' ? 'upwork/case-study' : 'case-study'
@@ -148,34 +148,7 @@ export default function CaseStudiesTable({
 
   return (
     <div>
-      <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
-        <div className="inline-flex w-full self-start rounded-lg border border-admin-border bg-admin-bg2 p-1 md:w-auto">
-          {/* Upwork Links option temporarily hidden
-          <button
-            type="button"
-            onClick={() => setLinkMode('upwork')}
-            className={
-              linkMode === 'upwork'
-                ? 'flex-1 rounded-md bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors md:flex-none'
-                : 'flex-1 rounded-md px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:text-admin-text md:flex-none'
-            }
-          >
-            Upwork Links
-          </button>
-          */}
-          <button
-            type="button"
-            onClick={() => setLinkMode('outreach')}
-            className={
-              linkMode === 'outreach'
-                ? 'flex-1 rounded-md bg-admin-accent px-3.5 py-1.5 text-xs font-semibold text-white transition-colors md:flex-none'
-                : 'flex-1 rounded-md px-3.5 py-1.5 text-xs font-medium text-admin-muted transition-colors hover:text-admin-text md:flex-none'
-            }
-          >
-            Cold Outreach Links
-          </button>
-        </div>
-
+      <div className="flex flex-col items-center gap-4 md:flex-row md:justify-end">
         <label className="relative block w-full md:max-w-sm">
           <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-admin-muted">
             <svg
@@ -281,7 +254,7 @@ export default function CaseStudiesTable({
                           caseStudy={cs}
                           deletingId={deletingId}
                           onDelete={handleDelete}
-                          linkPath={linkPath}
+                          linkMode={linkMode}
                           canEdit={canEdit}
                           canDelete={canDelete}
                         />
@@ -317,7 +290,7 @@ export default function CaseStudiesTable({
                     caseStudy={cs}
                     deletingId={deletingId}
                     onDelete={handleDelete}
-                    linkPath={linkPath}
+                    linkMode={linkMode}
                     canEdit={canEdit}
                     canDelete={canDelete}
                   />

@@ -10,5 +10,5 @@ export default async function DashboardPage() {
     redirect('/admin/login')
   }
 
-  return <DashboardView role={session.role} />
+  return <DashboardView role={session.role} linkMode="cold" />
 }
