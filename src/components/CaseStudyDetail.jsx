@@ -503,8 +503,9 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                   </a>
                 )}
                 <div className="cta-upwork-note">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B67A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                    <polyline points="20 6 9 17 4 12"></polyline>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B67A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
                   </svg>
                   <span>Communication and payments stay on Upwork.</span>
                 </div>
