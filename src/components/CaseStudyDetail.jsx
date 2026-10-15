@@ -219,7 +219,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
               <p className="builder-note">
                 {builder.note}
               </p>
-              <button onClick={scrollToVideo} className="watch-demo-btn">
+              <button onClick={scrollToVideo} className={`watch-demo-btn ${audience === 'upwork' ? 'watch-demo-highlight' : ''}`}>
                 Explore live demo
                 <span className="arrow-wrap">
                   <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
@@ -502,7 +502,13 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                     Discuss My Project on Upwork
                   </a>
                 )}
-                <p className="cta-upwork-note">Message me on Upwork. We'll keep all communication and payment through Upwork.</p>
+                <div className="cta-upwork-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B67A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                  <span>Communication and payments stay on Upwork.</span>
+                </div>
               </div>
             </div>
           </section>
@@ -521,7 +527,7 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
                   Upwork Profile
                 </a>
               )}
-              {siteData.contactEmail && (
+              {audience === 'cold' && (
                 <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(siteData.contactEmail)}`} className="cs-footer-link">
                   Direct Email
                 </a>
