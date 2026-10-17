@@ -258,7 +258,10 @@ body {
     color: var(--text);
     letter-spacing: -.3px;
     margin-bottom: 2px;
-    line-height: 1.2
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 0;
 }
 
 .case-study .builder-expertise {
@@ -1242,20 +1245,15 @@ body {
 
 .case-study .cs-verified-badge img {
   display: block;
-  width: 24px;
-  height: 24px;
-}
-
-/* Remove hover scale effect */
-.case-study .cs-logo:hover .cs-verified-badge {
-  transform: none;
+  width: 20px;
+  height: 20px;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .case-study .cs-verified-badge img {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -1609,19 +1607,19 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #22C55E 0%, #16A34A 100%);
+  background: #00A000; /* Match the navbar Upwork button green */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 160, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .case-study .cs-up-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 160, 0, 0.6);
 }
 
 /* Responsive */
