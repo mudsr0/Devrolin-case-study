@@ -184,6 +184,11 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           {audience === 'upwork' && cta?.upworkUrl && (
             <Link href="#" className="cs-logo">
               Mudassir <span className="cs-logo-accent">H.</span>
+              {audience === 'upwork' && (
+                <span className="cs-verified-badge" title="Verified">
+                  <img src="/images/verified-badge.png" alt="Verified" width="20" height="20" />
+                </span>
+              )}
             </Link>
           )}
           {audience === 'cold' && (
@@ -566,21 +571,32 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
 
       {audience === 'upwork' && (
         <div className="cs-upwork-floating">
-          {/* Client Review Button - scrolls to risk section */}
-          <button onClick={scrollToRiskReversal} className="cs-upwork-float-btn cs-float-review">
-            <span className="cs-upwork-label">Client Review</span>
-            <div className="cs-upwork-icon cs-icon-review">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            </div>
-          </button>
-
-          {/* Upwork Hire Button */}
-          {cta?.upworkUrl && (
-            <a href={cta.upworkUrl} target="_blank" rel="noopener noreferrer" className="cs-upwork-float-btn cs-float-upwork">
-              <span className="cs-upwork-label">Message on Upwork</span>
-              <div className="cs-upwork-icon cs-icon-upwork">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" /></svg>
+          {/* Top Row: Review Card + Play Button */}
+          <div className="cs-upwork-top-row">
+            {/* Client Review Card */}
+            <button onClick={scrollToRiskReversal} className="cs-review-card">
+              <div className="cs-review-icon-wrap">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#60A5FA"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
               </div>
+              <div className="cs-review-content">
+                <div className="cs-review-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="cs-review-text">Client Review</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+            {/* Blue Play Button with Glow */}
+            <button onClick={scrollToRiskReversal} className="cs-play-btn" aria-label="Watch Client Review">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+          </div>
+
+          {/* Bottom Row: Green Upwork Button */}
+          {cta?.upworkUrl && (
+            <a href={cta.upworkUrl} target="_blank" rel="noopener noreferrer" className="cs-up-btn" aria-label="Upwork">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" /></svg>
             </a>
           )}
         </div>
