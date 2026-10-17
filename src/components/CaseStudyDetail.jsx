@@ -184,11 +184,6 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           {audience === 'upwork' && cta?.upworkUrl && (
             <Link href="#" className="cs-logo">
               Mudassir <span className="cs-logo-accent">H.</span>
-              {audience === 'upwork' && (
-                <span className="cs-verified-badge" title="Verified">
-                  <img src="/images/verified-badge.png" alt="Verified" width="20" height="20" />
-                </span>
-              )}
             </Link>
           )}
           {audience === 'cold' && (
@@ -227,7 +222,14 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
             </div>
             <div className="builder-meta">
               <div className="builder-from">Sent personally by</div>
-              <div className="builder-name">{builder.name}</div>
+              <div className="builder-name">
+                {builder.name}
+                {audience === 'upwork' && (
+                  <span className="cs-verified-badge" title="Verified">
+                    <img src="/images/verified-badge.png" alt="Verified" width="20" height="20" />
+                  </span>
+                )}
+              </div>
               <div className="builder-expertise">CRM Automation & Sales Systems Expert</div>
               <p className="builder-note">
                 {builder.note}
