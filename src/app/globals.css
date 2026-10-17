@@ -1447,7 +1447,7 @@ body {
     }
 }
 
-/* ── Upwork Variant Floating Buttons ── */
+/* ── Upwork Floating Buttons (Redesigned) ── */
 .case-study .cs-upwork-floating {
   position: fixed;
   bottom: 24px;
@@ -1455,104 +1455,143 @@ body {
   z-index: 1000;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 12px;
 }
 
-.case-study .cs-upwork-float-btn {
+.case-study .cs-upwork-top-row {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Glassmorphism Review Card */
+.case-study .cs-review-card {
+  display: flex;
+  align-items: center;
   gap: 10px;
-  background: transparent;
-  border: none;
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 12px;
+  padding: 10px 14px;
   cursor: pointer;
-  text-decoration: none;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.case-study .cs-upwork-label {
-  background: var(--surface);
-  color: #FFFFFF;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--border-strong);
-  white-space: nowrap;
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+.case-study .cs-review-card:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 4px 25px rgba(59, 130, 246, 0.3);
 }
 
-/* Make the Upwork button tooltip hidden by default */
-.case-study .cs-float-upwork .cs-upwork-label {
-  opacity: 0;
-  transform: translateX(10px);
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+/* Triangular tail pointing right (toward play button) */
+.case-study .cs-review-card::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid rgba(17, 24, 39, 0.85);
+  filter: drop-shadow(1px 0 0 rgba(59, 130, 246, 0.4));
 }
 
-/* Show tooltip on hover */
-.case-study .cs-float-upwork:hover .cs-upwork-label {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-}
-
-.case-study .cs-upwork-icon {
-  width: 52px;
-  height: 52px;
+.case-study .cs-review-icon-wrap {
+  width: 32px;
+  height: 32px;
+  background: rgba(31, 41, 55, 0.9);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
-  transition: transform 0.3s ease;
+}
+
+.case-study .cs-review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* GREEN Trustpilot stars (not amber/yellow) */
+.case-study .cs-review-stars {
+  display: flex;
+  gap: 2px;
+  color: #00B67A;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.case-study .cs-review-text {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Blue Play Button with Glow */
+.case-study .cs-play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #2D9CDB 0%, #1E6091 100%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 30px rgba(45, 156, 219, 0.6), 0 0 60px rgba(45, 156, 219, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
 
-/* Ripple effect for floating Review button only */
-.case-study .cs-icon-review::before,
-.case-study .cs-icon-review::after {
+.case-study .cs-play-btn::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: -4px;
   border-radius: 50%;
-  z-index: -1;
-  animation: cs-float-ripple 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(45, 156, 219, 0.5);
+  animation: cs-play-pulse 2.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.case-study .cs-icon-review::before { background: #007BFF; }
-.case-study .cs-icon-review::after { background: #007BFF; animation-delay: 1.75s; }
-
-@keyframes cs-float-ripple {
-  0% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.4); opacity: 0.3; }
-  100% { transform: scale(1.8); opacity: 0; }
+@keyframes cs-play-pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
 }
 
-.case-study .cs-upwork-float-btn:hover .cs-upwork-icon {
+.case-study .cs-play-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(45, 156, 219, 0.8), 0 0 80px rgba(45, 156, 219, 0.4);
 }
 
-/* Blue circle for Client Review */
-.case-study .cs-icon-review {
-  background: #007BFF; 
+/* Green Upwork Button */
+.case-study .cs-up-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #22C55E 0%, #16A34A 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Green circle for Upwork */
-.case-study .cs-icon-upwork {
-  background: #00A000;
+.case-study .cs-up-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
 }
 
-/* Hide on very small screens to avoid blocking content */
+/* Responsive */
 @media (max-width: 480px) {
   .case-study .cs-upwork-floating {
     bottom: 16px;
@@ -1560,14 +1599,37 @@ body {
     gap: 8px;
   }
   
-  .case-study .cs-upwork-icon {
+  .case-study .cs-review-card {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  
+  .case-study .cs-review-text {
+    font-size: 11px;
+  }
+  
+  .case-study .cs-review-stars {
+    font-size: 10px;
+  }
+  
+  .case-study .cs-play-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .case-study .cs-play-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .case-study .cs-up-btn {
     width: 44px;
     height: 44px;
   }
   
-  .case-study .cs-upwork-label {
-    padding: 6px 10px;
-    font-size: 11px;
+  .case-study .cs-up-btn svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
