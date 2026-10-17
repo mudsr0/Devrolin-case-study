@@ -491,23 +491,29 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
             <div className="cta-next-step-card">
               <div className="cta-next-step-header">
                 <span className="cta-next-step-eyebrow">YOUR NEXT STEP</span>
-                <h2 className="cta-next-step-title">Let's Turn Your Problem Into a Working System.</h2>
+                <h2 className="cta-next-step-title">Let's Turn Your Problem<br />Into a Working System.</h2>
               </div>
 
               <div className="cta-next-step-grid">
                 <div className="cta-step-item">
                   <span className="cta-step-num">01</span>
-                  <span className="cta-step-text">Show Me the Problem</span>
+                  <div className="cta-step-content">
+                    <span className="cta-step-text">Show Me the Problem</span>
+                  </div>
                 </div>
-                <div className="cta-step-arrow">→</div>
+                <div className="cta-step-arrow">↓</div>
                 <div className="cta-step-item">
                   <span className="cta-step-num">02</span>
-                  <span className="cta-step-text">Get a Clear Direction</span>
+                  <div className="cta-step-content">
+                    <span className="cta-step-text">Get a Clear Direction</span>
+                  </div>
                 </div>
-                <div className="cta-step-arrow">→</div>
+                <div className="cta-step-arrow">↓</div>
                 <div className="cta-step-item">
                   <span className="cta-step-num">03</span>
-                  <span className="cta-step-text">Build With Confidence</span>
+                  <div className="cta-step-content">
+                    <span className="cta-step-text">Build With Confidence</span>
+                  </div>
                 </div>
               </div>
 
