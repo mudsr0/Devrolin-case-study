@@ -184,6 +184,11 @@ export default function CaseStudyDetail({ data, audience = 'upwork' }) {
           {audience === 'upwork' && cta?.upworkUrl && (
             <Link href="#" className="cs-logo">
               Mudassir <span className="cs-logo-accent">H.</span>
+              {audience === 'upwork' && (
+                <span className="cs-verified-badge" title="Verified">
+                  <img src="/images/verified-badge.png" alt="Verified" width="20" height="20" />
+                </span>
+              )}
             </Link>
           )}
           {audience === 'cold' && (
